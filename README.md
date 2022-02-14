@@ -12,4 +12,4 @@ I am using Codekit for it's .kit files.
 https://codekitapp.com/help/kit/
 These are basically like very simple PHP includes but for static HTML files.
 
-You can either use the compiled HTML files or go into assets/ki-files/includes and grab the individual components from there.
+You can either use the compiled HTML files or go into assets/kit-files/includes and grab the individual components from there.
