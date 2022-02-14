@@ -1,0 +1,56 @@
+/*	========================================================================== */
+/*    	FORMS
+/*	========================================================================== */
+
+label {
+  // @include font-body-regular;
+  color: $col_text_base;
+  // font-size: $font_size_1;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 0.25em;
+  }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  // @include font-body-regular;
+  // font-size: $font_size_1;
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  padding: 0.35em 0.75em;
+  // border: 1px solid $col_brand_grey_d_3;
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: 1em;
+  transition: all 0.3s ease;
+  // &:focus {
+  //   border-color: $col_brand_orange;
+  //   box-shadow: 0 0 0 3px $col_brand_orange_l_3;
+  //   }
+  }
+
+input[type="submit"],
+button[type="submit"] {
+  // @include font-body-bold;
+  // font-size: $font_size_1;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  color: #fff;
+  // background-color: $col_brand_orange;
+  padding: 0.35em 0.75em;
+  // border: 1px solid $col_brand_orange_d_3;
+  border-radius: 3px;
+  outline: none;
+  transition: all ease 0.3s;
+  margin-top: 2em;
+  // &:hover,
+  // &:focus,
+  // &:active {
+  //   background-color: $col_brand_raspberry;
+  //   border-color: $col_brand_raspberry_d_3;
+  //   }
+  }

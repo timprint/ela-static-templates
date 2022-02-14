@@ -1,0 +1,57 @@
+/*	========================================================================== */
+/*    	BASE STYLES
+/*	========================================================================== */
+
+html {
+	color: $col_text_base;
+	font-size: 16px;
+	text-size-adjust: 100%;
+	font-smoothing: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: smooth;
+  }
+
+body {
+  // @include font-body-regular;
+	font-size: 1em;
+	line-height: 1.6;
+	color: $col_text_base;
+  }
+  
+// @supports #{$modern_browsers} {
+// 
+//   body {
+//     min-height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     }
+//   
+//   }
+  
+::-moz-selection,
+::selection {
+	background: #b3d4fc;
+	text-shadow: none
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // @include font-body-bold;
+	line-height: 1.2;
+  }
+  
+p {
+  margin: 0 0 1em;
+  }
+
+img {
+  display: block;
+	height: auto;
+	max-width: 100%;
+	border-style: none
+  }

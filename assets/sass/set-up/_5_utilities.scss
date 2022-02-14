@@ -1,0 +1,111 @@
+/*	========================================================================== */
+/*    	UTILITY CLASSES - HIDE AND SHOW
+/*	========================================================================== */
+
+.u_visuallyHidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}
+
+.u_visuallyHidden.focusable:active,
+.u_visuallyHidden.focusable:focus {
+	clip: auto;
+	-webkit-clip-path: none;
+	clip-path: none;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+	white-space: inherit
+  }
+
+/*	========================================================================== */
+/*    	TEXT
+/*	========================================================================== */
+
+.u_txt_al { text-align: left;  }
+.u_txt_ac { text-align: center; }
+.u_txt_ar { text-align: right; }
+
+/*	========================================================================== */
+/*    	PADDING
+/*	========================================================================== */
+
+$padding-sizes: (
+   "1": 0.25em,
+   "2": 0.5em,
+   "3": 0.75em,
+   "4": 1em,
+   "5": 1.25em,
+   "6": 1.5em,
+   "7": 2em,
+   "8": 2.5em,
+   "9": 3em,
+  "10": 4rem,
+  "11": 5rem
+  );
+
+@each $step, $size in $padding-sizes {
+  .u_p-#{$step}  { padding: $size; }
+  .u_pt-#{$step} { padding-top: $size; }
+  .u_pb-#{$step} { padding-bottom: $size; }
+  .u_pl-#{$step} { padding-left: $size; }
+  .u_pr-#{$step} { padding-right: $size; }
+  }
+
+/*	========================================================================== */
+/*    	MARGINS
+/*	========================================================================== */
+
+$margin-sizes: (
+   "1": 0.25em,
+   "2": 0.5em,
+   "3": 0.75em,
+   "4": 1em,
+   "5": 1.25em,
+   "6": 1.5em,
+   "7": 2em,
+   "8": 2.5em,
+   "9": 3em,
+  "10": 4rem,
+  "11": 5rem
+  );
+
+@each $step, $size in $margin-sizes {
+  .u_m-#{$step}  { margin: $size; }
+  .u_mt-#{$step} { margin-top: $size; }
+  .u_mb-#{$step} { margin-bottom: $size; }
+  .u_ml-#{$step} { margin-left: $size; }
+  .u_mr-#{$step} { margin-right: $size; }
+  }
+
+/*	========================================================================== */
+/*    	MISC
+/*	========================================================================== */
+  
+.u_no-Wrap { white-space: nowrap; }
+
+/*	========================================================================== */
+/*    	DUOTONES
+/*	========================================================================== */
+
+// .u_duotone_orange     { filter: url(#duoOrange);     background-color: $col_brand_orange; }
+// .u_duotone_teal       { filter: url(#duoTeal);       background-color: $col_brand_teal; }
+// .u_duotone_cornflower { filter: url(#duoCornflower); background-color: $col_brand_cornflower; }
+// .u_duotone_lavender   { filter: url(#duoLavender);   background-color: $col_brand_lavender; }
+// .u_duotone_lime       { filter: url(#duoLime);       background-color: $col_brand_lime; }
+// .u_duotone_raspberry  { filter: url(#duoRaspberry);  background-color: $col_brand_raspberry; }
+
+
+
+

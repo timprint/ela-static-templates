@@ -1,0 +1,932 @@
+/*	========================================================================== */
+/*    	UNIVERSAL SET UP FILES
+/*	========================================================================== */
+/*	========================================================================== 
+  	VARIABLES : BROWSER SUPPORT AND PROGRESSIVE ENHANCEMENT
+
+    To simplify development we do some feature query checks together and only
+    serve the full grid based design to browsers that support: GRID, FLEXBOX,
+    CALC & VIEWPORT UNITS.
+
+    We use the following variable to detect this using @supports.
+
+    At time of development (2022) this should be over 95% of browsers
+
+    ========================================================================== */
+/*	========================================================================== 
+  	VARIABLES : BREAKPOINTS
+    ========================================================================== */
+/*	========================================================================== 
+  	VARIABLES : GRIDS
+    ========================================================================== */
+/*	========================================================================== 
+  	VARIABLES : TYPESCALE
+    ========================================================================== */
+/*	========================================================================== 
+  	VARIABLES : COLOURS
+    ========================================================================== */
+/*	========================================================================== */
+/*    	Mixins
+/*	========================================================================== */
+/* FONTS */
+/* TEXT DECORATION */
+/* DROP SHADOW */
+/*	========================================================================== */
+/*    	NORMALIZE
+/*      modern-normalize v0.6.0 | MIT License
+/*      https://github.com/sindresorhus/modern-normalize
+/*	========================================================================== */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+set heml 5 elements
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+Add the correct height in Firefox.
+*/
+hr {
+  height: 0;
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Correct the padding in Firefox.
+*/
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+/*	========================================================================== */
+/*    	BASE STYLES
+/*	========================================================================== */
+html {
+  color: #333;
+  font-size: 16px;
+  text-size-adjust: 100%;
+  font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+::-moz-selection,
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border-style: none;
+}
+
+/*	========================================================================== */
+/*    	UTILITY CLASSES - HIDE AND SHOW
+/*	========================================================================== */
+.u_visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.u_visuallyHidden.focusable:active,
+.u_visuallyHidden.focusable:focus {
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*	========================================================================== */
+/*    	TEXT
+/*	========================================================================== */
+.u_txt_al {
+  text-align: left;
+}
+
+.u_txt_ac {
+  text-align: center;
+}
+
+.u_txt_ar {
+  text-align: right;
+}
+
+/*	========================================================================== */
+/*    	PADDING
+/*	========================================================================== */
+.u_p-1 {
+  padding: 0.25em;
+}
+
+.u_pt-1 {
+  padding-top: 0.25em;
+}
+
+.u_pb-1 {
+  padding-bottom: 0.25em;
+}
+
+.u_pl-1 {
+  padding-left: 0.25em;
+}
+
+.u_pr-1 {
+  padding-right: 0.25em;
+}
+
+.u_p-2 {
+  padding: 0.5em;
+}
+
+.u_pt-2 {
+  padding-top: 0.5em;
+}
+
+.u_pb-2 {
+  padding-bottom: 0.5em;
+}
+
+.u_pl-2 {
+  padding-left: 0.5em;
+}
+
+.u_pr-2 {
+  padding-right: 0.5em;
+}
+
+.u_p-3 {
+  padding: 0.75em;
+}
+
+.u_pt-3 {
+  padding-top: 0.75em;
+}
+
+.u_pb-3 {
+  padding-bottom: 0.75em;
+}
+
+.u_pl-3 {
+  padding-left: 0.75em;
+}
+
+.u_pr-3 {
+  padding-right: 0.75em;
+}
+
+.u_p-4 {
+  padding: 1em;
+}
+
+.u_pt-4 {
+  padding-top: 1em;
+}
+
+.u_pb-4 {
+  padding-bottom: 1em;
+}
+
+.u_pl-4 {
+  padding-left: 1em;
+}
+
+.u_pr-4 {
+  padding-right: 1em;
+}
+
+.u_p-5 {
+  padding: 1.25em;
+}
+
+.u_pt-5 {
+  padding-top: 1.25em;
+}
+
+.u_pb-5 {
+  padding-bottom: 1.25em;
+}
+
+.u_pl-5 {
+  padding-left: 1.25em;
+}
+
+.u_pr-5 {
+  padding-right: 1.25em;
+}
+
+.u_p-6 {
+  padding: 1.5em;
+}
+
+.u_pt-6 {
+  padding-top: 1.5em;
+}
+
+.u_pb-6 {
+  padding-bottom: 1.5em;
+}
+
+.u_pl-6 {
+  padding-left: 1.5em;
+}
+
+.u_pr-6 {
+  padding-right: 1.5em;
+}
+
+.u_p-7 {
+  padding: 2em;
+}
+
+.u_pt-7 {
+  padding-top: 2em;
+}
+
+.u_pb-7 {
+  padding-bottom: 2em;
+}
+
+.u_pl-7 {
+  padding-left: 2em;
+}
+
+.u_pr-7 {
+  padding-right: 2em;
+}
+
+.u_p-8 {
+  padding: 2.5em;
+}
+
+.u_pt-8 {
+  padding-top: 2.5em;
+}
+
+.u_pb-8 {
+  padding-bottom: 2.5em;
+}
+
+.u_pl-8 {
+  padding-left: 2.5em;
+}
+
+.u_pr-8 {
+  padding-right: 2.5em;
+}
+
+.u_p-9 {
+  padding: 3em;
+}
+
+.u_pt-9 {
+  padding-top: 3em;
+}
+
+.u_pb-9 {
+  padding-bottom: 3em;
+}
+
+.u_pl-9 {
+  padding-left: 3em;
+}
+
+.u_pr-9 {
+  padding-right: 3em;
+}
+
+.u_p-10 {
+  padding: 4rem;
+}
+
+.u_pt-10 {
+  padding-top: 4rem;
+}
+
+.u_pb-10 {
+  padding-bottom: 4rem;
+}
+
+.u_pl-10 {
+  padding-left: 4rem;
+}
+
+.u_pr-10 {
+  padding-right: 4rem;
+}
+
+.u_p-11 {
+  padding: 5rem;
+}
+
+.u_pt-11 {
+  padding-top: 5rem;
+}
+
+.u_pb-11 {
+  padding-bottom: 5rem;
+}
+
+.u_pl-11 {
+  padding-left: 5rem;
+}
+
+.u_pr-11 {
+  padding-right: 5rem;
+}
+
+/*	========================================================================== */
+/*    	MARGINS
+/*	========================================================================== */
+.u_m-1 {
+  margin: 0.25em;
+}
+
+.u_mt-1 {
+  margin-top: 0.25em;
+}
+
+.u_mb-1 {
+  margin-bottom: 0.25em;
+}
+
+.u_ml-1 {
+  margin-left: 0.25em;
+}
+
+.u_mr-1 {
+  margin-right: 0.25em;
+}
+
+.u_m-2 {
+  margin: 0.5em;
+}
+
+.u_mt-2 {
+  margin-top: 0.5em;
+}
+
+.u_mb-2 {
+  margin-bottom: 0.5em;
+}
+
+.u_ml-2 {
+  margin-left: 0.5em;
+}
+
+.u_mr-2 {
+  margin-right: 0.5em;
+}
+
+.u_m-3 {
+  margin: 0.75em;
+}
+
+.u_mt-3 {
+  margin-top: 0.75em;
+}
+
+.u_mb-3 {
+  margin-bottom: 0.75em;
+}
+
+.u_ml-3 {
+  margin-left: 0.75em;
+}
+
+.u_mr-3 {
+  margin-right: 0.75em;
+}
+
+.u_m-4 {
+  margin: 1em;
+}
+
+.u_mt-4 {
+  margin-top: 1em;
+}
+
+.u_mb-4 {
+  margin-bottom: 1em;
+}
+
+.u_ml-4 {
+  margin-left: 1em;
+}
+
+.u_mr-4 {
+  margin-right: 1em;
+}
+
+.u_m-5 {
+  margin: 1.25em;
+}
+
+.u_mt-5 {
+  margin-top: 1.25em;
+}
+
+.u_mb-5 {
+  margin-bottom: 1.25em;
+}
+
+.u_ml-5 {
+  margin-left: 1.25em;
+}
+
+.u_mr-5 {
+  margin-right: 1.25em;
+}
+
+.u_m-6 {
+  margin: 1.5em;
+}
+
+.u_mt-6 {
+  margin-top: 1.5em;
+}
+
+.u_mb-6 {
+  margin-bottom: 1.5em;
+}
+
+.u_ml-6 {
+  margin-left: 1.5em;
+}
+
+.u_mr-6 {
+  margin-right: 1.5em;
+}
+
+.u_m-7 {
+  margin: 2em;
+}
+
+.u_mt-7 {
+  margin-top: 2em;
+}
+
+.u_mb-7 {
+  margin-bottom: 2em;
+}
+
+.u_ml-7 {
+  margin-left: 2em;
+}
+
+.u_mr-7 {
+  margin-right: 2em;
+}
+
+.u_m-8 {
+  margin: 2.5em;
+}
+
+.u_mt-8 {
+  margin-top: 2.5em;
+}
+
+.u_mb-8 {
+  margin-bottom: 2.5em;
+}
+
+.u_ml-8 {
+  margin-left: 2.5em;
+}
+
+.u_mr-8 {
+  margin-right: 2.5em;
+}
+
+.u_m-9 {
+  margin: 3em;
+}
+
+.u_mt-9 {
+  margin-top: 3em;
+}
+
+.u_mb-9 {
+  margin-bottom: 3em;
+}
+
+.u_ml-9 {
+  margin-left: 3em;
+}
+
+.u_mr-9 {
+  margin-right: 3em;
+}
+
+.u_m-10 {
+  margin: 4rem;
+}
+
+.u_mt-10 {
+  margin-top: 4rem;
+}
+
+.u_mb-10 {
+  margin-bottom: 4rem;
+}
+
+.u_ml-10 {
+  margin-left: 4rem;
+}
+
+.u_mr-10 {
+  margin-right: 4rem;
+}
+
+.u_m-11 {
+  margin: 5rem;
+}
+
+.u_mt-11 {
+  margin-top: 5rem;
+}
+
+.u_mb-11 {
+  margin-bottom: 5rem;
+}
+
+.u_ml-11 {
+  margin-left: 5rem;
+}
+
+.u_mr-11 {
+  margin-right: 5rem;
+}
+
+/*	========================================================================== */
+/*    	MISC
+/*	========================================================================== */
+.u_no-Wrap {
+  white-space: nowrap;
+}
+
+/*	========================================================================== */
+/*    	DUOTONES
+/*	========================================================================== */
+/*	========================================================================== */
+/*    	FORMS
+/*	========================================================================== */
+label {
+  color: #333;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  padding: 0.35em 0.75em;
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: 1em;
+  transition: all 0.3s ease;
+}
+
+input[type=submit],
+button[type=submit] {
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  color: #fff;
+  padding: 0.35em 0.75em;
+  border-radius: 3px;
+  outline: none;
+  transition: all ease 0.3s;
+  margin-top: 2em;
+}
+
+/*	========================================================================== */
+/*    	TABLES
+/*	========================================================================== */
+/*	========================================================================== */
+/*    	LAYOUT
+/*	========================================================================== */
+main {
+  width: 100%;
+  clear: both;
+  margin: 0 auto;
+}
+
+@supports (display: grid) and (display: flex) and (width: 100vw) and (width: calc(100% - 1em)) {
+  main {
+    flex-grow: 1;
+  }
+}
+/*	========================================================================== */
+/*    	THIRD PARTY
+/*	========================================================================== */
+/*	========================================================================== */
+/*    	COMPONENTS
+/*	========================================================================== */
+/*	========================================================================== */
+/*    	PAGE FOOTER
+/*	========================================================================== */
+/*	========================================================================== */
+/*    	PAGE HEADER LAYOUT
+/*	========================================================================== */
+/*	========================================================================== */
+/*		PAGINATION
+/*	========================================================================== */

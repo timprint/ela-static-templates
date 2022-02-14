@@ -1,0 +1,54 @@
+/*	========================================================================== 
+  	VARIABLES : BROWSER SUPPORT AND PROGRESSIVE ENHANCEMENT
+    
+    To simplify development we do some feature query checks together and only
+    serve the full grid based design to browsers that support: GRID, FLEXBOX,
+    CALC & VIEWPORT UNITS.
+    
+    We use the following variable to detect this using @supports.
+    
+    At time of development (2022) this should be over 95% of browsers
+
+    ========================================================================== */
+
+$modern_browsers: "(display: grid) and (display: flex) and (width: 100vw) and (width: calc(100% - 1em))";
+
+/*	========================================================================== 
+  	VARIABLES : BREAKPOINTS
+    ========================================================================== */
+
+$break_mobile_l:      375px;
+$break_tablet_s:      600px;
+$break_tablet:        760px;
+$break_laptop:        1000px;
+$break_desktop:       1200px;
+$break_wide:          1600px;
+$break_xxxl:          1800px;
+
+/*	========================================================================== 
+  	VARIABLES : GRIDS
+    ========================================================================== */
+    
+// 2 column with 2em gutters and 2em margins   
+// $grid_columns_small:   repeat(2, 1fr);
+
+
+/*	========================================================================== 
+  	VARIABLES : TYPESCALE
+    ========================================================================== */
+
+// $font_size_xs:    0.694em;
+// $font_size_s:     0.8333em;
+// $font_size_1:     1em;
+// $font_size_2:     1.2em;
+// $font_size_3:     1.44em;
+// $font_size_4:     1.728em;
+// $font_size_5:     2.074em;
+// $font_size_6:     2.488em;
+// $font_size_7:     3em;
+
+/*	========================================================================== 
+  	VARIABLES : COLOURS
+    ========================================================================== */
+
+$col_text_base:     #333;
