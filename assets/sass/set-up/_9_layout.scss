@@ -3,17 +3,9 @@
 /*	========================================================================== */
 
 main {
+  flex-grow: 1;
 	width: 100%;
-	clear: both;
 	margin: 0 auto;
-  }
-  
-@supports #{$modern_browsers} {
-
-  main {
-    flex-grow: 1;
-    }
-  
   }
   
 // .skipLink {

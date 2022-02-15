@@ -2,22 +2,10 @@
 /*    	UNIVERSAL SET UP FILES
 /*	========================================================================== */
 /*	========================================================================== 
-  	VARIABLES : BROWSER SUPPORT AND PROGRESSIVE ENHANCEMENT
-
-    To simplify development we do some feature query checks together and only
-    serve the full grid based design to browsers that support: GRID, FLEXBOX,
-    CALC & VIEWPORT UNITS.
-
-    We use the following variable to detect this using @supports.
-
-    At time of development (2022) this should be over 95% of browsers
-
-    ========================================================================== */
-/*	========================================================================== 
   	VARIABLES : BREAKPOINTS
     ========================================================================== */
 /*	========================================================================== 
-  	VARIABLES : GRIDS
+  	VARIABLES : DIMENSIONS
     ========================================================================== */
 /*	========================================================================== 
   	VARIABLES : TYPESCALE
@@ -336,6 +324,13 @@ body {
   font-size: 1em;
   line-height: 1.6;
   color: #333;
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(255, 255, 0, 0.35);
+  /*" YELLOW ----- temporary to be removed ----- "*/
 }
 
 ::-moz-selection {
@@ -914,17 +909,12 @@ button[type=submit] {
 /*    	LAYOUT
 /*	========================================================================== */
 main {
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
   width: 100%;
-  clear: both;
   margin: 0 auto;
 }
 
-@supports (display: grid) and (display: flex) and (width: 100vw) and (width: calc(100% - 1em)) {
-  main {
-    -webkit-flex-grow: 1;
-            flex-grow: 1;
-  }
-}
 /*	========================================================================== */
 /*    	THIRD PARTY
 /*	========================================================================== */
@@ -937,6 +927,187 @@ main {
 /*	========================================================================== */
 /*    	PAGE HEADER LAYOUT
 /*	========================================================================== */
+.pageHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+@media only screen and (min-width: 750px) {
+  .pageHeader {
+    grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
+    grid-template-columns: min-content 1fr min-content;
+  }
+}
+
+/*	========================================================================== */
+/*    	PAGE HEADER : MAIN LOGO
+/*	========================================================================== */
+.headerLogo {
+  background-color: #fff;
+  padding: 1em;
+}
+@media only screen and (min-width: 750px) {
+  .headerLogo {
+    padding: 1.5em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .headerLogo {
+    padding: 1.5em 2em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .headerLogo {
+    padding: 1.5em 2em 1.5em calc((100vw - 74em) / 2);
+  }
+}
+
+/*	========================================================================== */
+/*    	PAGE HEADER : MOBILE TOGGLE
+/*	========================================================================== */
+.headerNavToggle {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  background-color: #fff;
+  padding: 1em;
+}
+@media only screen and (min-width: 750px) {
+  .headerNavToggle {
+    display: none;
+  }
+}
+
+/*	========================================================================== */
+/*    	PAGE HEADER : UTILITY NAV
+/*	========================================================================== */
+.headerUtilities {
+  grid-column: 2/3;
+  grid-row-start: 2;
+  background-color: #FFD518;
+  padding: 1em;
+}
+@media only screen and (min-width: 750px) {
+  .headerUtilities {
+    grid-column: 2/4;
+    grid-row-start: 1;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+    -webkit-align-items: center;
+            align-items: center;
+    background-color: #fff;
+    padding: 1.5em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .headerUtilities {
+    padding: 1.5em 2em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .headerUtilities {
+    padding: 1.5em calc((100vw - 74em) / 2) 1.5em 2em;
+  }
+}
+
+.headerUtilities ul {
+  list-style: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  padding: 0;
+  margin: 0;
+}
+@media only screen and (min-width: 750px) {
+  .headerUtilities ul {
+    -webkit-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.headerUtilities a {
+  text-decoration: none;
+  display: block;
+}
+
+/*	========================================================================== */
+/*    	PAGE HEADER : MAIN NAV
+/*	========================================================================== */
+.headerMainNav {
+  grid-column: 1/2;
+  grid-row-start: 2;
+  background-color: #FFD518;
+  padding: 1em;
+}
+@media only screen and (min-width: 750px) {
+  .headerMainNav {
+    grid-column: 1/3;
+    padding: 0.5em 1.5em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .headerMainNav {
+    padding: 1em 2em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .headerMainNav {
+    padding: 1em 2em 1em calc((100vw - 74em) / 2);
+  }
+}
+
+.headerMainNav ul {
+  list-style: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+@media only screen and (min-width: 750px) {
+  .headerMainNav ul {
+    -webkit-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.headerMainNav a {
+  text-decoration: none;
+  display: block;
+}
+
+/*	========================================================================== */
+/*    	PAGE HEADER : SEARCH
+/*	========================================================================== */
+.headerSearch {
+  grid-column: 1/3;
+  background-color: #FFD518;
+  padding: 1em;
+}
+@media only screen and (min-width: 750px) {
+  .headerSearch {
+    grid-column: 3/4;
+    padding: 0.5em 1.5em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .headerSearch {
+    padding: 1em 2em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .headerSearch {
+    padding: 1em calc((100vw - 74em) / 2) 1em 2em;
+  }
+}
+
 /*	========================================================================== */
 /*		PAGINATION
 /*	========================================================================== */

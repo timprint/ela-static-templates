@@ -1,37 +1,18 @@
 /*	========================================================================== 
-  	VARIABLES : BROWSER SUPPORT AND PROGRESSIVE ENHANCEMENT
-    
-    To simplify development we do some feature query checks together and only
-    serve the full grid based design to browsers that support: GRID, FLEXBOX,
-    CALC & VIEWPORT UNITS.
-    
-    We use the following variable to detect this using @supports.
-    
-    At time of development (2022) this should be over 95% of browsers
-
-    ========================================================================== */
-
-$modern_browsers: "(display: grid) and (display: flex) and (width: 100vw) and (width: calc(100% - 1em))";
-
-/*	========================================================================== 
   	VARIABLES : BREAKPOINTS
     ========================================================================== */
 
-$break_mobile_l:      375px;
-$break_tablet_s:      600px;
-$break_tablet:        760px;
+$break_mobile_l:      400px;
+$break_tablet:        750px;
 $break_laptop:        1000px;
-$break_desktop:       1200px;
+$break_desktop:       1280px;
 $break_wide:          1600px;
-$break_xxxl:          1800px;
 
 /*	========================================================================== 
-  	VARIABLES : GRIDS
+  	VARIABLES : DIMENSIONS
     ========================================================================== */
-    
-// 2 column with 2em gutters and 2em margins   
-// $grid_columns_small:   repeat(2, 1fr);
-
+		
+$max-width: 74em;
 
 /*	========================================================================== 
   	VARIABLES : TYPESCALE
@@ -52,3 +33,5 @@ $break_xxxl:          1800px;
     ========================================================================== */
 
 $col_text_base:     #333;
+
+$col-brand-yellow: #FFD518;
