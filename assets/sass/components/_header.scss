@@ -4,10 +4,50 @@
 
 .pageHeader {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+ 	grid-template-columns: 1fr 1fr;
 	grid-gap: 0;
+	position: relative;
+	overflow-x: hidden;
   @media only screen and (min-width: $break_tablet) {
 		grid-template-columns: min-content 1fr min-content;
+	}
+}
+
+.headerNavContainer {
+	grid-column: 1 / 3;
+	display: grid;
+ 	grid-template-columns: 1fr 1fr;
+	grid-gap: 0;
+  @media only screen and (min-width: $break_tablet) {
+		grid-column: 1 / 4;
+		grid-row-start: 1;
+		grid-template-columns: 1fr min-content;
+	}
+}
+
+.hasJS .headerNavContainer {
+  @media only screen and (max-width: $break_mobile_max) {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 4em;
+		z-index: 2;
+		transform: translateX(100vw);
+		transition: transform ease 0.2s,
+								background-color ease 0.2s;
+	}
+}
+
+.hasJS .m_navOpen .headerNavContainer {
+  @media only screen and (max-width: $break_mobile_max) {
+		transform: translateX(0);
+	}
+}
+
+.hasJS .m_navOpen .headerLogo,
+.hasJS .m_navOpen .headerNavToggle {
+  @media only screen and (max-width: $break_mobile_max) {
+		background-color: $col-brand-yellow;
 	}
 }
 	
@@ -18,7 +58,10 @@
 .headerLogo {
 	background-color: #fff;
 	padding: 1em;
+	transition: background-color ease 0.2s;
   @media only screen and (min-width: $break_tablet) {
+		position: absolute;
+		z-index: 2;
 		padding: 1.5em;
 	}
   @media only screen and (min-width: $break_laptop) {
@@ -27,6 +70,11 @@
   @media only screen and (min-width: $break_desktop) {
 		padding: 1.5em 2em 1.5em calc((100vw - #{$max-width}) / 2);
 	}
+}
+
+.headerLogo img {
+	width: 8em;  /*" ----- to be CONFIRMED ----- "*/
+	height: 2em; /*" ----- to be CONFIRMED ----- "*/
 }
 	
 /*	========================================================================== */
@@ -38,6 +86,7 @@
 	justify-content: flex-end;
 	background-color: #fff;
 	padding: 1em;
+	transition: background-color ease 0.2s;
   @media only screen and (min-width: $break_tablet) {
 		display: none;
 	  }
@@ -49,16 +98,21 @@
 
 .headerUtilities {
 	grid-column: 2 / 3;
-	grid-row-start: 2;
+	grid-row-start: 1;
 	background-color: $col-brand-yellow;
-	padding: 1em;
   @media only screen and (min-width: $break_tablet) {
-		grid-column: 2 / 4;
+		grid-column: 1 / 3;
 		grid-row-start: 1;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
 		background-color: #fff;
+	  }
+}
+
+.headerUtilities nav {
+	padding: 1em;
+  @media only screen and (min-width: $break_tablet) {
 		padding: 1.5em;
 	  }
   @media only screen and (min-width: $break_laptop) {
@@ -96,11 +150,16 @@
 
 .headerMainNav {
 	grid-column: 1 / 2;
-	grid-row-start: 2;
+	grid-row-start: 1;
 	background-color: $col-brand-yellow;
+  @media only screen and (min-width: $break_tablet) {
+		grid-row-start: 2;
+	  }
+}
+
+.headerMainNav nav {
 	padding: 1em;
   @media only screen and (min-width: $break_tablet) {
-		grid-column: 1 / 3;
 		padding: 0.5em 1.5em;
 	  }
   @media only screen and (min-width: $break_laptop) {
@@ -138,9 +197,14 @@
 .headerSearch {
 	grid-column: 1 / 3;
 	background-color: $col-brand-yellow;
+  @media only screen and (min-width: $break_tablet) {
+		grid-column: 2 / 3;
+	  }
+}
+
+.headerSearch form {
 	padding: 1em;
   @media only screen and (min-width: $break_tablet) {
-		grid-column: 3 / 4;
 		padding: 0.5em 1.5em;
 	  }
   @media only screen and (min-width: $break_laptop) {

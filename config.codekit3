@@ -68,7 +68,7 @@
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
-      "mi" : 0,
+      "mi" : 1,
       "oA" : 0,
       "oAP" : "\/assets\/js\/min\/site-min.js",
       "oF" : 0,
@@ -92,6 +92,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/kit-files\/includes\/doc-head.html",
+      "oF" : 0
+    },
+    "\/assets\/kit-files\/includes\/js-footer.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/kit-files\/includes\/js-footer.html",
       "oF" : 0
     },
     "\/assets\/kit-files\/includes\/page-footer.kit" : {
@@ -299,6 +307,22 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/index.html",
+      "oF" : 0
+    },
+    "\/README.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0
     },
     "\/README.md" : {
       "cB" : 0,

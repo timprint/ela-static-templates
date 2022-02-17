@@ -1,9 +1,1 @@
-// Loop through light gallery groups and initilize lightgallery    
-var lightGalleries = document.getElementsByClassName('lightgallery');
-Array.prototype.forEach.call(lightGalleries, function(gallery) {
-  lightGallery(gallery, {
-    selector: '.lightgallery--trigger',
-    download: false,
-    getCaptionFromTitleOrAlt: true,
-    });
-  });
+"use strict";function navToggle(){var e=document.querySelector("body");document.querySelector(".headerNavToggle a").addEventListener("click",(function(t){t.preventDefault(),e.classList.toggle("m_navOpen")}))}document.addEventListener("DOMContentLoaded",navToggle);
