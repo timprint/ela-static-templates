@@ -5,8 +5,30 @@
 main {
   flex-grow: 1;
 	width: 100%;
+	padding: 2em;
 	margin: 0 auto;
   }
+	
+.hasJS body::after {
+	content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+	height: 100vh;
+  max-height: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0);
+	transition: background-color 0.7s ease;
+  @media only screen and (min-width: $break_tablet) {
+		display: none;
+	  }
+}
+	
+.hasJS body.m_navOpen::after {
+	max-height: 100vh;
+  background-color: rgba(0,0,0,0.85);
+}
   
 // .skipLink {
 //   text-align: center;

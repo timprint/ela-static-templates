@@ -13,7 +13,7 @@ html {
   }
 
 body {
-  // @include font-body-regular;
+  @include font_medium;
 	font-size: 1em;
 	line-height: 1.6;
 	color: $col_text_base;
@@ -22,7 +22,6 @@ body {
   flex-direction: column;
 	position: relative;
 	overflow-x: hidden;
-	background-color: rgba(255, 255, 0, 0.35); /*" YELLOW ----- temporary to be removed ----- "*/
   }
   
 ::-moz-selection,
@@ -51,3 +50,7 @@ img {
 	max-width: 100%;
 	border-style: none
   }
+	
+a {
+	transition: all 0.3s ease;
+}

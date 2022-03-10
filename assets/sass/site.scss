@@ -8,10 +8,10 @@
 @import "set-up/_2_mixins";
 @import "set-up/_3_normalize";
 @import "set-up/_4_base";
-@import "set-up/_5_utilities";
-@import "set-up/_6_forms";
-@import "set-up/_7_tables";
-@import "set-up/_9_layout";
+@import "set-up/_5_forms";
+@import "set-up/_6_tables";
+@import "set-up/_7_layout";
+@import "set-up/_8_component-library";
 
 /*	========================================================================== */
 /*    	THIRD PARTY
@@ -23,6 +23,13 @@
 /*    	COMPONENTS
 /*	========================================================================== */
 
+@import "components/_button";
 @import "components/_footer";
 @import "components/_header";
 @import "components/_pagination";
+
+/*	========================================================================== */
+/*    	MODIFIERS
+/*	========================================================================== */
+
+@import "utilities/_utilities"

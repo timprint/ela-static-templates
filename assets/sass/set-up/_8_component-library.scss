@@ -1,0 +1,80 @@
+/*	========================================================================== */
+/*    	COMPONENT LIBRARY
+/*	========================================================================== */
+
+.componentLibrary-nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 20em;
+	height: 100vh;
+	max-height: 100vh;
+	overflow-y: scroll;
+	padding: 2em;
+	background-color: $col_grey_100;
+}
+
+.componentLibrary-nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.componentLibrary-nav a {
+	@include font-size-14;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.componentLibrary-nav p {
+	@include font-size-11;
+	text-transform: uppercase;
+	color: $col_grey_700;
+	margin: 0.75em 0 0.25em;
+}
+
+.componentLibrary-content {
+	height: 100vh;
+	max-height: 100vh;
+	overflow-y: scroll;
+	padding: 2em 2em 2em 22em;
+}
+
+.component {
+	padding-bottom: 2em;
+	border-bottom: 3px solid $col_grey_200;
+	margin-bottom: 2em;
+}
+
+.component h2 {
+	@include font-size-16;
+	text-transform: uppercase;
+}
+
+.component-variant {
+	margin-bottom: 2em;
+}
+
+.component-variant:not(:last-child) {
+	padding-bottom: 2em;
+	border-bottom: 1px solid $col_grey_200;
+}
+
+.component .component-variant-title {
+	@include font-size-16;
+	color: $col_grey_700;
+	margin: 0 0 1em;
+}
+
+.component .component-variant-title span {
+	@include font-size-12;
+	text-transform: uppercase;
+}
+
+.component .component-variant-title pre {
+	font-family: monospace;
+	@include font-size-12;
+	color: $col_grey_600;
+	display: block;
+	margin: 0.25em 0 0;
+}

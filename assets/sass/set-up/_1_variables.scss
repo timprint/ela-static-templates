@@ -13,26 +13,73 @@ $break_wide:          1600px;
   	VARIABLES : DIMENSIONS
     ========================================================================== */
 		
-$max-width: 74em;
+$max_width: 74em;
+
+$logo_aspect_ratio: 4.083333333; /* 196 / 48 */
 
 /*	========================================================================== 
-  	VARIABLES : TYPESCALE
+  	VARIABLES : Z-INDICES
     ========================================================================== */
 
-// $font_size_xs:    0.694em;
-// $font_size_s:     0.8333em;
-// $font_size_1:     1em;
-// $font_size_2:     1.2em;
-// $font_size_3:     1.44em;
-// $font_size_4:     1.728em;
-// $font_size_5:     2.074em;
-// $font_size_6:     2.488em;
-// $font_size_7:     3em;
+$z-header: 2;
+$z-headerLogo: 3;
+$z-headerNavToggle: 3;
+
+/*	========================================================================== 
+  	VARIABLES : TYPOGRAPHY
+    ========================================================================== */
+		
+$font_family_body: sans-serif;
+$font_family_title: sans-serif;
+
+$font_size_10:    0.625em;
+$font_size_11:    0.6875em;
+$font_size_12:    0.75em;
+$font_size_14:    0.875em;
+$font_size_16:    1em;
+$font_size_18:    1.125em;
+$font_size_20:    1.25em;
+$font_size_24:    1.5em;
+$font_size_28:    1.75em;
+$font_size_32:   	2em;
+$font_size_36:   	2.25em;
+$font_size_40:   	2.5em;
+$font_size_48:   	3em;
 
 /*	========================================================================== 
   	VARIABLES : COLOURS
     ========================================================================== */
 
-$col_text_base:     #333;
+$col_text_base:     #333333;
 
-$col-brand-yellow: #FFD518;
+$col_brand_light: #FFD518;
+
+$col_blue: #1544BD;
+$col_blue_d_1: #133FAD;
+$col_blue_d_2: #002070;
+$col_blue_l_1: #1E53D9;
+$col_blue_l_2: #245DED;
+$col_blue_l_3: #336DFF;
+
+$col_green: #C4D108;
+$col_green_d_1: #B6C207;
+$col_green_d_2: #A7B207;
+$col_green_d_3: #99A306;
+$col_green_l_1: #D0DE08;
+$col_green_l_2: #D8E51;
+$col_green_l_3: #DDEB13;
+
+$col_lightblue_100: #EFF6FF;
+$col_lightblue_200: #DBEAFE;
+$col_lightblue_300: #BFDBFE;
+$col_lightblue_400: #93C5FD;
+
+$col_grey_50: #F8FAFC;
+$col_grey_100: #F1F5F9;
+$col_grey_150: #E3E9F1;
+$col_grey_200: #E2E8F0;
+$col_grey_300: #CBD5E1;
+$col_grey_400: #94A3B8;
+$col_grey_500: #64748B;
+$col_grey_600: #475569;
+$col_grey_700: #334155;

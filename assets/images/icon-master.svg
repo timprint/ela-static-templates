@@ -1,0 +1,97 @@
+<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+  <symbol id="icon-account" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M2 24c0-4.475 4.49-8 9.959-8C17.431 16 22 19.523 22 24h2c0-5.458-5.37-10-12.041-10C5.285 14 0 18.54 0 24h2zM12 0C8.413 0 5.5 2.913 5.5 6.5S8.413 13 12 13s6.5-2.913 6.5-6.5S15.587 0 12 0zm0 2c2.484 0 4.5 2.016 4.5 4.5S14.484 11 12 11 7.5 8.984 7.5 6.5 9.516 2 12 2z"/>
+  </symbol>
+  
+  <symbol id="icon-admin" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M22.508,14.458l-1.59-1.309A8.89,8.89,0,0,0,21,12h0a9.072,9.072,0,0,0-.082-1.149l1.59-1.309A2,2,0,0,0,22.969,7L21.816,5a2,2,0,0,0-2.434-.872l-1.934.724A9.021,9.021,0,0,0,15.463,3.7l-.338-2.024A2,2,0,0,0,13.152,0h-2.3A2,2,0,0,0,8.874,1.671L8.537,3.7A8.975,8.975,0,0,0,6.552,4.853L4.618,4.129A2,2,0,0,0,2.184,5L1.031,7a2,2,0,0,0,.461,2.543l1.59,1.309A8.89,8.89,0,0,0,3,12H3a9.072,9.072,0,0,0,.082,1.149l-1.59,1.309A2,2,0,0,0,1.031,17l1.153,2a2,2,0,0,0,2.434.872l1.934-.724a9.021,9.021,0,0,0,1.985,1.158l.338,2.024A2,2,0,0,0,10.848,24h2.3a2,2,0,0,0,1.973-1.671l.337-2.024a8.975,8.975,0,0,0,1.985-1.158l1.934.724A2,2,0,0,0,21.816,19l1.153-2A2,2,0,0,0,22.508,14.458ZM12,16a4,4,0,1,1,4-4A4,4,0,0,1,12,16Z"/>
+  </symbol>
+  
+  <symbol id="icon-cross" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+    <path d="M0 3l3-3 5 5 5-5 3 3-5 5 5 5-3 3-5-5-5 5-3-3 5-5-5-5z"/>
+  </symbol>
+  
+  <symbol id="icon-email" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"  aria-hidden="true" focusable="false">
+    <path d="M24 2.999H0V21h24V2.999zM9.29 13.074l-6.771 5.925h18.962l-6.772-5.925L12 15.291l-2.71-2.217zm6.989-1.284L22 16.795V7.109l-5.721 4.681zM2 16.795l5.72-5.005L2 7.11v9.685zM21.421 4.999H2.578L12 12.707l9.421-7.708z"/>
+  </symbol>
+  
+  <symbol id="icon-file" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"  aria-hidden="true" focusable="false">
+    <rect x="6.016" y="14" width="12" height="2"/>
+    <rect x="6.016" y="10" width="12" height="2"/>
+    <rect x="6" y="6" width="6" height="2"/>
+    <rect x="6" y="18" width="12" height="2"/>
+    <path d="M22,6l-5.999,-5.999l-14.001,0l0,23.999l20,0l0,-18Zm-8,-3.999l0,5.999l6,-0l0,14c-0,0 -16,0 -16,0c-0,-0 -0,-19.999 -0,-19.999l10,0Zm5.172,3.999l-3.172,-3.172l0,3.172l3.172,0Z"/>
+  </symbol>
+  
+  <symbol id="icon-home" viewBox="0 0 16 18" fill-rule="evenodd" clip-rule="evenodd"  aria-hidden="true" focusable="false">
+    <path d="M8 0 0 6v12h5v-7h6v7h5V6L8 0Z"/>
+  </symbol>
+  
+  <symbol id="icon-location" viewBox="0 0 24 24">
+    <path id="location-2" d="M12,0C6,0,3,4.5,3,9s9,15,9,15,9-10.5,9-15S18,0,12,0Zm0,12a3,3,0,1,1,3-3A3,3,0,0,1,12,12Z"/>
+  </symbol>
+      
+  <symbol id="icon-magnify" viewBox="0 0 260 260" aria-hidden="true" focusable="false">
+    <path d="M31.5 106.9c0-41.4 33.7-75.1 75.1-75.1 41.4 0 75.1 33.7 75.1 75.1 0 41.4-33.7 75.1-75.1 75.1-41.4 0-75.1-33.7-75.1-75.1zm228.2 130.8l-67.5-67.5c13.2-17.7 21-39.7 21-63.4C213.2 48 165.4.2 106.6.2 47.8.3 0 48.1 0 106.9c0 58.8 47.8 106.6 106.6 106.6 23.7 0 45.7-7.8 63.4-20.9l67.5 67.5 22.2-22.4z"/>
+  </symbol>
+	
+  <symbol id="icon-paper-plane" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true" focusable="false">
+    <g transform="matrix(1,0,0,1,-144,-280)">
+      <g id="icon-paper-plane" transform="matrix(0.01875,0,0,0.03,144,280)">
+          <g transform="matrix(53.3333,0,0,33.3333,-7680,-9303.59)">
+              <path d="M153.958,293.897L153.958,300.705C153.958,301.341 154.357,301.909 154.955,302.125C155.553,302.342 156.222,302.161 156.629,301.672L160.859,296.597L167,299L168,280L144,290L153.958,293.897ZM156.042,299.123L158.814,295.797L156.042,294.712L156.042,299.123ZM165.79,283.93L156.838,292.876L165.148,296.128L165.79,283.93ZM149.34,289.942L155.779,292.461L164.71,283.538L149.34,289.942Z"/>
+          </g>
+      </g>
+    </g>
+	</symbol>
+  
+  <symbol id="icon-phone" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"  aria-hidden="true" focusable="false">
+    <path d="M.059 6.533c.242-1.841.97-3.522 2.507-4.962l.89-.72C4.669.05 5.963.21 7.176 2.291 8.47 4.532 9.441 5.893 7.5 7.813l-.89.801c-.89.8-.97 1.12-.728 2.401.728 1.76 4.772 6.082 6.552 6.882 1.294.4 1.617.32 2.507-.48l.809-.88c2.022-1.761 3.397-.72 5.5.72 2.103 1.361 2.103 2.641 1.213 3.762l-.809.88c-1.455 1.36-3.235 2.001-5.095 2.081-6.147.56-17.471-11.445-16.5-17.447zm23.618 7.203c-.162 1.04-1.699.72-1.456-.24C23.677 5.973 18.743.691 11.059 1.651c-.971.16-1.214-1.361-.162-1.521 8.816-1.12 14.559 5.042 12.78 13.606zm-7.28-1.041c-.404.881-1.86.24-1.456-.64.809-1.841-1.051-3.761-2.912-3.121-.97.32-1.536-1.121-.566-1.441 3.155-1.12 6.228 2.161 4.934 5.202zm3.721.48c-.324.961-1.78.561-1.537-.4 1.375-4.562-2.346-8.563-7.037-7.523-.971.24-1.294-1.28-.324-1.52 5.824-1.281 10.596 3.761 8.898 9.443z"/>
+  </symbol>
+  
+  <symbol id="icon-search" viewBox="0 0 18 18" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true" focusable="false">
+    <path d="M12.5 11h-.79l-.28-.27A6.471 6.471 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5Zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11Z" />
+  </symbol>
+  
+  <symbol id="icon-social-linkedin" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+  </symbol>
+    
+  <symbol id="icon-social-twitter" viewBox="0 0 24 24">
+    <path d="m21.6 7.1v.6c0 6.5-5 14-14 14-2.8 0-5.4-.8-7.6-2.2.4 0 .8.1 1.2.1 2.3 0 4.4-.8 6.1-2.1-2.2 0-4-1.5-4.6-3.4.3.1.6.1.9.1.4 0 .9-.1 1.3-.2-2.3-.4-4-2.4-4-4.8 0 0 0 0 0-.1.7.4 1.4.6 2.2.6-1.2-.9-2.1-2.4-2.1-4.1 0-.9.2-1.7.7-2.5 2.4 3 6.1 4.9 10.2 5.1-.1-.4-.1-.7-.1-1.1 0-2.7 2.2-4.9 4.9-4.9 1.4 0 2.7.6 3.6 1.6 1.1-.2 2.2-.6 3.1-1.2-.4 1.2-1.1 2.1-2.2 2.7 1-.1 1.9-.4 2.8-.8-.6 1-1.5 1.9-2.4 2.6z"/>
+  </symbol>
+  
+  <symbol id="icon-tick" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+    <path d="M6 10l8-10 2 3L6 16l-6-6 3-3 3 3z"/>
+  </symbol>
+  
+  <symbol id="icon-triangle-down" viewBox="0 0 10 5" aria-hidden="true" focusable="false">
+    <polygon points="0,0 10,0 5,5" />
+  </symbol>
+  
+  <symbol id="icon-triangle-down-left" viewBox="0 0 10 10" aria-hidden="true" focusable="false">
+    <polygon points="0,0 10,10 0,10" />
+  </symbol>
+  
+  <symbol id="icon-triangle-down-right" viewBox="0 0 10 10" aria-hidden="true" focusable="false">
+    <polygon points="10,0 10,10 0,10" />
+  </symbol>
+  
+  <symbol id="icon-triangle-up" viewBox="0 0 10 5" aria-hidden="true" focusable="false">
+    <polygon points="0,5 5,0 10,5" />
+  </symbol>
+  
+  <symbol id="icon-triangle-up-left" viewBox="0 0 10 10" aria-hidden="true" focusable="false">
+    <polygon points="0,0 10,0 0,10" />
+  </symbol>
+  
+  <symbol id="icon-triangle-up-right" viewBox="0 0 10 10" aria-hidden="true" focusable="false">
+    <polygon points="0,0 10,0 10,10" />
+  </symbol>
+	
+	<symbol id="icon-user" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+		<path d="M8 8c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4Zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4Z"/>
+	</symbol>
+  
+</svg>

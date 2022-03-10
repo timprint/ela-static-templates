@@ -11,7 +11,7 @@
 	    <!-- GOOGLE FONTS                                                            -->
 	    <!-- https://csswizardry.com/2020/05/the-fastest-google-fonts/               -->
 	    <!-- <link rel="preconnect"
-	      href="https://fonts.gstatic.com?ckcachebust=954926477376D343E74C7475F704483D"
+	      href="https://fonts.gstatic.com?ckcachebust=7B1394D63FF0B0AB2475AD6B2C09E760"
 	      crossorigin />
 				
 	    <link rel="preload"
@@ -39,7 +39,7 @@
 	    <script src="/assets/js/third-party/picturefill.min.js?ckcachebust=ACEE602838CBA0E9AD28F5F9F2583623" async></script>
 	    <!-- ======================================================================= -->
 	
-	    <link rel="stylesheet" href="/assets/css/site.css?ckcachebust=F897D71D05F2683B85E534A78267332A" media="all">
+	    <link rel="stylesheet" href="/assets/css/site.css?ckcachebust=D41A322A8F18B01E504165EB50FD5D06" media="all">
 	    <link rel="stylesheet" href="/assets/css/print.css?ckcachebust=9DD94C5A4B02914AF42E8E6372E0B709" media="print">
 	
 	</head>
@@ -49,11 +49,17 @@
 		<header class="pageHeader">
 			
 			<div class="headerLogo">
-				<a href="/"><img src="http://placeimg.com/303/48/any" alt=""></a>
+				<a href="/"><img src="/assets/images/ela-logo.svg" alt=""></a>
 			</div>
 			
 			<div class="headerNavToggle">
-				<a href="#navigation">Menu</a>
+				<a href="#navigation" class="headerNavToggle-indicator">
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		      <span></span>
+					<span class="u_visuallyhidden">Menu</span>
+				</a>
 			</div>
 			
 			<div class="headerNavContainer" id="navigation">
@@ -61,10 +67,15 @@
 				<div class="headerUtilities">
 						<nav>
 							<ul>
-								<li><a href="">About us</a></li>
-								<li><a href="">Contact us</a></li>
-								<li><a href="">Join us</a></li>
-								<li><a href="">Log in</a></li>
+								<li class="headerUtilities-textItem active"><a href="">About us</a></li>
+								<li class="headerUtilities-textItem"><a href="">Contact us</a></li>
+								<li class="headerUtilities-textItem"><a href="">Join us</a></li>
+								<li>
+									<a href="" class="button m_xsmall">
+										<svg><use xlink:href="/assets/images/icon-master.svg#icon-user"></use></svg>
+										<span>Log in</span>
+									</a>
+								</li>
 							</ul>
 						</nav>
 				</div>
@@ -72,8 +83,13 @@
 				<div class="headerMainNav">
 					<nav>
 						<ul>
-							<li class="active"><a href="">Home</a></li>
-							<li><a href="">Membership</a></li>
+							<li>
+								<a href="" class="headerMainNav-home">
+										<svg><use xlink:href="/assets/images/icon-master.svg#icon-home"></use></svg>
+										<span class="u_visuallyhidden">Home</span>
+									</a>
+								</li>
+							<li class="active"><a href="">Membership</a></li>
 							<li><a href="">Training & Events</a></li>
 							<li><a href="">Law & Practice</a></li>
 							<li><a href="">Policy & Advice</a></li>
@@ -85,8 +101,13 @@
 				
 				<div class="headerSearch">
 					<form>
-						<input type="search" />
-						<button type="submit">Search</button>
+						<div class="headerSearchBar">
+							<input type="search" />
+							<button type="submit">
+								<svg><use xlink:href="/assets/images/icon-master.svg#icon-search"></use></svg>
+								<span class="u_visuallyhidden">Search</span>
+							</button>
+						</div>
 					</form>
 				</div>
 				

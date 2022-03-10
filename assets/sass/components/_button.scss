@@ -1,0 +1,49 @@
+/*	========================================================================== */
+/*		BUTTON
+/*	========================================================================== */
+
+.button {
+	@include font-size-16;
+	@include font_bold;
+	line-height: 1.2;
+	text-decoration: none;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	background-color: $col_blue_d_1;
+	padding: 0 1.25em;
+	outline: none;
+	border: none;
+	border-radius: 6px;
+	transition: all 0.2s ease;
+}
+
+.button:focus,
+.button:hover,
+.button:active {
+	background-color: $col_blue_l_1;
+	box-shadow: 0 0 0 4px $col_lightblue_300;
+}
+
+.button.m_large {
+	@include font-size-20;
+}
+
+.button.m_small {
+	@include font-size-14;
+}
+
+.button.m_xsmall {
+	@include font-size-12;
+}
+
+.button span {
+	display: block;
+	padding: 0.75em 0.3em 0.6em;
+}
+
+.button svg {
+	width: 1.2em;
+	height: 1.2em;
+	fill: currentColor
+}

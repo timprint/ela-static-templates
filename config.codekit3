@@ -86,36 +86,52 @@
       "sC" : 1,
       "tS" : 0
     },
-    "\/assets\/kit-files\/includes\/doc-head.kit" : {
+    "\/assets\/kit-files\/component-library.html" : {
       "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/kit-files\/component-library.html",
+      "oF" : 0
+    },
+    "\/assets\/kit-files\/component-library.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/component-library.html",
+      "oF" : 0
+    },
+    "\/assets\/kit-files\/includes\/doc-head.kit" : {
+      "cB" : 1,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/kit-files\/includes\/doc-head.html",
+      "oAP" : "\/assets\/doc-head.html",
       "oF" : 0
     },
     "\/assets\/kit-files\/includes\/js-footer.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/kit-files\/includes\/js-footer.html",
+      "oAP" : "\/assets\/js-footer.html",
       "oF" : 0
     },
     "\/assets\/kit-files\/includes\/page-footer.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/kit-files\/includes\/page-footer.html",
+      "oAP" : "\/assets\/page-footer.html",
       "oF" : 0
     },
     "\/assets\/kit-files\/includes\/page-header.kit" : {
-      "cB" : 0,
+      "cB" : 1,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/kit-files\/includes\/page-header.html",
+      "oAP" : "\/assets\/page-header.html",
       "oF" : 0
     },
     "\/assets\/kit-files\/index.kit" : {
@@ -125,6 +141,20 @@
       "oA" : 0,
       "oAP" : "\/index.html",
       "oF" : 2
+    },
+    "\/assets\/sass\/components\/_button.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/css\/_button.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/assets\/sass\/components\/_footer.scss" : {
       "aP" : 0,
@@ -238,7 +268,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/sass\/set-up\/_5_utilities.scss" : {
+    "\/assets\/sass\/set-up\/_5_forms.scss" : {
       "aP" : 0,
       "bl" : 0,
       "dP" : 10,
@@ -246,13 +276,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/sass\/css\/_5_utilities.css",
+      "oAP" : "\/assets\/sass\/css\/_5_forms.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/sass\/set-up\/_6_forms.scss" : {
+    "\/assets\/sass\/set-up\/_6_tables.scss" : {
       "aP" : 0,
       "bl" : 0,
       "dP" : 10,
@@ -260,13 +290,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/sass\/css\/_6_forms.css",
+      "oAP" : "\/assets\/sass\/css\/_6_tables.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/sass\/set-up\/_7_tables.scss" : {
+    "\/assets\/sass\/set-up\/_7_layout.scss" : {
       "aP" : 0,
       "bl" : 0,
       "dP" : 10,
@@ -274,13 +304,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/sass\/css\/_7_tables.css",
+      "oAP" : "\/assets\/sass\/css\/_7_layout.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/sass\/set-up\/_9_layout.scss" : {
+    "\/assets\/sass\/set-up\/_8_component-library.scss" : {
       "aP" : 0,
       "bl" : 0,
       "dP" : 10,
@@ -288,7 +318,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/sass\/css\/_9_layout.css",
+      "oAP" : "\/assets\/sass\/css\/_8_component-library.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -307,6 +337,28 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/assets\/sass\/utilities\/_utilities.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/css\/_utilities.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/component-library.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/component-library.html",
+      "oF" : 0
     },
     "\/index.html" : {
       "cB" : 0,
@@ -2216,12 +2268,12 @@
     "languageDefaultsKIT" : {
       "autoOutputAction" : 0,
       "autoOutputPathFilenamePattern" : "*.html",
-      "autoOutputPathRelativePath" : "",
+      "autoOutputPathRelativePath" : "..\/..\/",
       "autoOutputPathReplace1" : "kit",
       "autoOutputPathReplace2" : "html",
-      "autoOutputPathStyle" : 0,
+      "autoOutputPathStyle" : 2,
       "htmlMinifierStyle" : 0,
-      "shouldRunCacheBuster" : 0
+      "shouldRunCacheBuster" : 1
     },
     "languageDefaultsLESS" : {
       "allowInsecureImports" : 0,
