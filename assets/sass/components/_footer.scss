@@ -2,4 +2,131 @@
 /*    	PAGE FOOTER
 /*	========================================================================== */
   
-  
+  .pageFooter {
+		color: #fff;
+		background-color: $col_blue_d_2;
+		padding: 0 2em;
+		margin: 0;
+  	@media only screen and (min-width: $break_tablet) {
+			padding: 0 1.5em;
+		}
+  	@media only screen and (min-width: $break_laptop) {
+			padding: 0 2em;
+		}
+	}
+	
+	.footerGrid {
+		display: grid;
+		gap: 2em;
+		max-width: $max_width;
+		padding: 2em 0;
+		margin: 0 auto;
+  	@media only screen and (min-width: $break_tablet) {
+			grid-template-columns: 1fr auto;
+			gap: 1em;
+			align-items: center;
+			padding: 2em 0;
+		}
+  	@media only screen and (min-width: $break_laptop) {
+			padding: 3em 0;
+		}
+	}
+	
+/*	========================================================================== */
+/*    	PAGE FOOTER : LINKS
+/*	========================================================================== */
+
+.footerLinks {
+  @media only screen and (min-width: $break_tablet) {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		}
+}
+
+.footerLinks ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.125em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  @media only screen and (min-width: $break_tablet) {
+		flex-direction: row;
+		gap: 1em;
+		}
+}
+
+.footerLinks ul li:not(:last-child) {
+  	@media only screen and (min-width: $break_tablet) {
+			border-right: 1px solid rgba(255,255,255,0.2);
+			padding-right: 1em;
+		}
+}
+
+.footerLinks ul li a {
+	color: #fff;
+	transition: all 0.2s ease;
+	text-decoration: none;
+	&:hover,
+	&:focus,
+	&:active {
+    color: $col_green;
+  	text-decoration-line: underline;
+		text-decoration-skip-ink: auto;
+		text-decoration-thickness: 2px;
+		text-underline-offset: 4px;
+		text-decoration-color: $col_green;
+    }
+}
+	
+/*	========================================================================== */
+/*    	PAGE FOOTER : SOCIAL
+/*	========================================================================== */
+
+.footerSocial {
+  @media only screen and (min-width: $break_tablet) {
+		grid-column: 2 / 3;
+		grid-row: 1 / 3;
+		}
+}
+
+.footerSocial ul {
+	display: flex;
+	gap: 1em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footerSocial ul li a {
+	color: #fff;
+	display: block;
+	transition: all 0.2s ease;
+	&:hover,
+	&:focus,
+	&:active {
+    color: $col_green;
+    }
+}
+
+.footerSocial ul li a svg {
+	width: 2em;
+	height: 2em;
+	fill: currentColor;
+	transition: all 0.2s ease;
+}
+	
+/*	========================================================================== */
+/*    	PAGE FOOTER : SMALLPRINT
+/*	========================================================================== */
+
+.footerSmallprint {
+  @media only screen and (min-width: $break_tablet) {
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+		}
+}
+
+.footerSmallprint p {
+	margin: 0;
+}
