@@ -16,3 +16,15 @@
     position: absolute;
     width: 1px;
 	}
+	
+.u_max-width {
+	width: calc(100vw - 4em);
+	max-width: $max_width;
+	margin: 0 auto;
+  @media only screen and (min-width: $break_tablet) {
+		width: calc(100vw - 3em);
+		}
+  @media only screen and (min-width: $break_laptop) {
+		width: calc(100vw - 4em);
+	  }
+}

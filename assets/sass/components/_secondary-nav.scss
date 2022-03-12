@@ -1,0 +1,39 @@
+/*	========================================================================== */
+/*		SECONDARY NAV
+/*	========================================================================== */
+
+.secondary-nav {
+	max-width: 15em;
+}
+
+.secondary-nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1em;
+}
+
+.secondary-nav li + li {
+	margin-top: 4px;
+}
+
+.secondary-nav a {
+	@include font_bold;
+	@include font-size-14;
+	line-height: 1.2;
+	text-decoration: none;
+	color: $col_blue_d_1;
+	display: block;
+	background-color: $col_grey_100;
+	border-radius: 4px;
+	padding: 0.65em 0.75em 0.45em;
+	&:hover,
+	&:focus,
+	&:active {
+    background-color: $col_grey_200;
+    }
+}
+
+.secondary-nav .active a {
+	color: #fff;
+	background-color: $col_blue_d_2;
+}

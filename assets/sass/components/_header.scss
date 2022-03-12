@@ -3,13 +3,17 @@
 /*	========================================================================== */
 
 .pageHeader {
+	position: relative;
+	z-index: $z-header;
+	background-color: #fff;
+}
+
+.pageHeaderGrid {
 	display: grid;
  	grid-template-columns: 1fr 1fr;
 	grid-gap: 0;
-	width: 100%;
 	position: relative;
-	z-index: $z-header;
-	overflow-x: hidden;
+	width: 100%;
   @media only screen and (min-width: $break_tablet) {
 		display: block;
 	}
@@ -23,7 +27,7 @@
   @media only screen and (min-width: $break_tablet) {
 		grid-column: 1 / 2;
 		grid-row-start: 1;
-		grid-template-columns: 1fr auto 4.5em;
+		grid-template-columns: 1fr auto 2.5em;
 	}
   @media only screen and (min-width: $break_laptop) {
 		grid-template-columns: 1fr auto auto;
@@ -59,18 +63,17 @@
 	position: relative;
 	z-index: $z-headerLogo;
 	background-color: #fff;
-	padding: 1em 1em 1em 2em;
-	transition: background-color ease 0.2s;
+	padding: 1em 1em 1em 0;
   @media only screen and (min-width: $break_tablet) {
 		position: absolute;
 		z-index: 2;
-		padding: 1.5em;
+		padding: 1.5em 1.5em 1.5em 0;
 	}
   @media only screen and (min-width: $break_laptop) {
-		padding: 1.5em 2em;
+		padding: 1.5em 2em 1.5em 0;
 	}
   @media only screen and (min-width: $break_desktop) {
-		padding: 1.5em 2em 1.5em calc((100vw - #{$max_width}) / 2);
+		padding: 1.5em 2em 1.5em 0;
 	}
 }
 
@@ -102,7 +105,7 @@
 	position: relative;
 	z-index: $z-headerNavToggle;
 	background-color: #fff;
-	padding: 0.375em 1.375em 0.375em 1em;
+	padding: 0.375em 0.125em 0.375em 1em;
 	transition: background-color ease 0.2s;
   @media only screen and (min-width: $break_tablet) {
 		display: none;
@@ -180,14 +183,11 @@
 .headerUtilities nav {
 	padding: 1em 2em 1em 1em;
   @media only screen and (min-width: $break_tablet) {
-		padding: 1.75em 1.5em;
+		padding: 1.75em 0 1.75em 1.5em;
 	  }
   @media only screen and (min-width: $break_laptop) {
-		padding: 1.5em 2em;
+		padding: 1.5em 0 1.5em 2em;
 	  }
-  @media only screen and (min-width: $break_desktop) {
-		padding: 1.5em calc((100vw - #{$max_width}) / 2) 1.5em  2em;
-	}
 }
 
 .headerUtilities ul {
@@ -252,14 +252,11 @@
 .headerMainNav nav {
 	padding: 1em 1em 1em 2em;
   @media only screen and (min-width: $break_tablet) {
-		padding: 0.5em 0.5em 0.5em 1.5em;
+		padding: 0.5em 0.5em 0.5em 0;
 	  }
   @media only screen and (min-width: $break_laptop) {
-		padding: 1em 2em;
+		padding: 1em 2em 1em 0;
 	  }
-  @media only screen and (min-width: $break_desktop) {
-		padding: 1em 2em 1em calc((100vw - #{$max_width}) / 2);
-	}
 }
 
 .headerMainNav ul {
@@ -366,13 +363,13 @@
 		display: flex;
     justify-content: flex-end;
 		position: relative;
-		padding: 0.25em 1.5em 0.5em 0.5em;
+		padding: 0.25em 0 0.5em 0.5em;
 	  }
   @media only screen and (min-width: $break_laptop) {
-		padding: 0.75em 2em;
+		padding: 0.75em 0 0.75em 2em;
 	  }
   @media only screen and (min-width: $break_desktop) {
-		padding: 0.75em calc((100vw - #{$max_width}) / 2) 1em 2em;
+		padding: 0.75em 0 1em 2em;
 	}
 }
 
@@ -390,6 +387,10 @@
   @media only screen and (min-width: $break_desktop) {
 		flex-grow: 1;
 	}
+}
+
+.headerSearchBar:hover {
+	background-color: $col_grey_200;
 }
 
 .headerSearchBar:focus-within {
@@ -426,8 +427,9 @@
 .headerSearch form input {
   @media only screen and (min-width: $break_tablet) {
 		position: absolute;
-		top: 0.5em;
-		right: 1.5em;
+		top: 0;
+		bottom: 0;
+		right: 0;
 		width: 2.5em;
 		min-width: unset;
 	  }
