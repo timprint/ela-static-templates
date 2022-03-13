@@ -1,0 +1,128 @@
+/*	========================================================================== */
+/*		HERO
+/*	========================================================================== */
+
+.hero {
+	color: #fff;
+	position: relative;
+	margin-bottom: 1em; /*" ----- temporary to be removed ----- "*/
+}
+
+.hero-layout-sidebar {
+	display: grid;
+	gap: 1em;
+  @media only screen and (min-width: $break_laptop) {
+		grid-template-columns: 15em auto;
+		grid-template-rows: auto 1fr;
+		gap: 2em;
+	  }
+}
+	
+.hero h1 {
+	@include font_bold;
+	@include font-size-40;
+	font-size: clamp(40px,5vw,56px);
+	line-height: 1.2;
+	color: #fff;
+	margin: 2em 0 0.5em;
+	margin-top: clamp(2em,16vw,5em);
+}
+
+.hero-title {
+  @media only screen and (min-width: $break_laptop) {
+		grid-column: 2 / 3;
+		grid-row: 1 / 3;
+	  }
+}
+
+/*	========================================================================== */
+/*		HERO : IMAGES
+/*	========================================================================== */
+
+[class^="hero-image"] {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background-color: $col_blue_d_2;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	filter: url("../svg/duotone-filter.svg#duotone");
+}
+
+.hero-image-a {
+	background-image: url("../images/stock-images/istockphoto-182921151-2048x2048.jpeg");
+}
+
+.hero-image-b {
+	background-image: url("../images/stock-images/istockphoto-507496712-2048x2048.jpeg");
+	background-position: left 20%;
+}
+
+.hero-image-c {
+	background-image: url("../images/stock-images/istockphoto-599485534-2048x2048.jpeg");
+	background-position: left 40%;
+}
+
+.hero-image-d {
+	background-image: url("../images/stock-images/istockphoto-614138202-2048x2048.jpeg");
+	background-position: left 40%;
+}
+
+.hero-image-e {
+	background-image: url("../images/stock-images/istockphoto-646783784-2048x2048.jpeg");
+	background-position: right 50%;
+}
+
+.hero-image-f {
+	background-image: url("../images/stock-images/istockphoto-650133760-2048x2048.jpeg");
+	background-position: center bottom;
+}
+
+.hero-image-g { 
+	background-image: url("../images/stock-images/istockphoto-1029298546-2048x2048.jpeg");
+	background-position: right bottom 15%;
+}
+
+.hero-image-h {
+	background-image: url("../images/stock-images/istockphoto-1097469318-2048x2048.jpeg");
+	background-position: center top 30%;
+}
+
+.hero-image-i {
+	background-image: url("../images/stock-images/istockphoto-1152760517-2048x2048.jpeg");
+}
+
+.hero-image-j {
+	background-image: url("../images/stock-images/istockphoto-1175031702-2048x2048.jpeg");
+	background-position: center bottom 28%;
+}
+
+.hero-image-k {
+	background-image: url("../images/stock-images/istockphoto-1180973515-2048x2048.jpeg");
+	background-position: center bottom 37%;
+}
+
+.hero-image-l {
+	background-image: url("../images/stock-images/istockphoto-1188899957-2048x2048.jpeg");
+	background-position: right top 2%;
+}
+
+.hero-image-m {
+	background-image: url("../images/stock-images/istockphoto-1281724535-2048x2048.jpeg");
+}
+
+.hero-image-n {
+	background-image: url("../images/stock-images/istockphoto-1286826042-2048x2048.jpeg");
+}
+
+.hero-image-o {
+	background-image: url("../images/stock-images/istockphoto-1301076379-2048x2048.jpeg");
+}
+
+.hero-image-p {
+	background-image: url("../images/stock-images/istockphoto-1313246059-2048x2048.jpeg");
+}

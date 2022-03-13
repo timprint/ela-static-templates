@@ -99,6 +99,14 @@
       "oAP" : "\/assets\/doc-head.html",
       "oF" : 0
     },
+    "\/assets\/kit-files\/includes\/hero-with-title.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/hero-with-title.html",
+      "oF" : 0
+    },
     "\/assets\/kit-files\/includes\/js-footer.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -121,14 +129,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/page-header.html",
-      "oF" : 0
-    },
-    "\/assets\/kit-files\/includes\/page-title-with-image.kit" : {
-      "cB" : 1,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/page-title-with-image.html",
       "oF" : 0
     },
     "\/assets\/kit-files\/index.kit" : {
@@ -212,6 +212,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/sass\/css\/_header.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/sass\/components\/_hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/css\/_hero.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -398,6 +412,16 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/assets\/svg\/duotone-filter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/svg\/duotone-filter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/component-library.html" : {
       "cB" : 0,

@@ -2,30 +2,43 @@
 /*		PAGINATION
 /*	========================================================================== */
 
-// .pagination a,
-// .pagination span {
-//   @include font-body-bold;
-//   line-height: 3;
-//   text-decoration: none;
-//   text-align: center;
-//   display: inline-block;
-//   width: 3em;
-//   transition: all 0.2s ease;
-//   }
-//   
-// .pagination a {
-//   color: $col_brand_charcoal_l_1;
-//   background-color: #fff;
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     color: $col_brand_orange;
-//     background-color: $col_brand_orange_l_3;
-//     }
-//   }
-//       
-// .pagination span {
-//   color: #fff;
-//   background-color: $col_brand_orange;
-//   }
-// 
+.pagination {
+	padding-top: 2em;
+	border-top: 1px solid $col_grey_100;
+	margin: 2em 0;
+}
+
+.pagination a,
+.pagination span {
+  @include font-bold;
+  line-height: 3;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 3em;
+  transition: all 0.2s ease;
+}
+  
+.pagination a {
+  color: $col_blue_d_1;
+  background-color: $col_grey_100;
+  &:hover,
+  &:focus,
+  &:active {
+  	background-color: $col_grey_200;
+  }
+}
+      
+.pagination span {
+  color: #fff;
+  background-color: $col_blue_d_1;
+}
+
+.pagination a.pagination-word {
+	padding: 0 1em;
+  width: auto;
+}
+	
+.pagination-count {
+	margin-top: 0.5em;
+}

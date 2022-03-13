@@ -309,6 +309,7 @@
 
 .headerMainNav-home {
 	display: inline-block;
+	padding-bottom: 4px;
 	border-bottom: 2px solid #fff;
   @media only screen and (min-width: $break_tablet) {
 		border-bottom-width: 4px;
@@ -412,19 +413,9 @@
 	margin: 0;
 }
 
-.headerSearchBar input {
+.headerSearch form input {
 	min-width: 15.5em;
 	flex-grow: 1;
-}
-
-.headerSearchBar input:hover,
-.headerSearchBar input:focus,
-.headerSearchBar input:active {
-	border: none;
-	box-shadow: none;
-}
-
-.headerSearch form input {
   @media only screen and (min-width: $break_tablet) {
 		position: absolute;
 		top: 0;
@@ -439,7 +430,18 @@
 		right: auto;
 		width: auto;
 		min-width: unset;
+		width: 10em;
 	  }
+  @media only screen and (min-width: $break_desktop) {
+		width: auto;
+	}
+}
+
+.headerSearchBar input:hover,
+.headerSearchBar input:focus,
+.headerSearchBar input:active {
+	border: none;
+	box-shadow: none;
 }
 
 .headerSearch form input:focus {
@@ -451,6 +453,10 @@
 		width: 15.5em;
 	  }
   @media only screen and (min-width: $break_laptop) {
+		width: auto;
+		width: 10em;
+	}
+  @media only screen and (min-width: $break_desktop) {
 		width: auto;
 	}
 }

@@ -5,8 +5,8 @@
 .breadcrumbs {
 	display: inline-block;
 	background-color: $col_grey_100;
-	border-radius: 4px;
-	padding: 0.65em 0.75em 0.45em;
+	border-radius: 6px;
+	padding: 0.125em 0.25em;
 	margin-bottom: 2em;
 }
 
@@ -14,9 +14,21 @@
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0.5em;
+	gap: 0.25em;
 	padding: 0;
 	margin: 0;
+}
+
+.breadcrumbs li {
+	display: flex;
+	align-items: center;
+	gap: 0;
+}
+
+.breadcrumbs li:not(:last-child):after {
+	content: "/";
+	color: $col_grey_300;
+	margin: 0 0.25em 0;
 }
 
 .breadcrumbs a,
@@ -25,31 +37,22 @@
 	@include font_medium;
 	line-height: 1.2;
 	text-decoration: none;
-  color: $col_blue_d_1;
 	display: block;
+	background-color: $col_grey_100;
+	padding: 0.325em 0.5em 0.225em;
+	border-radius: 4px;
 }
 
 .breadcrumbs a {
-	display: flex;
-	color: $col_blue_d_1;
+  color: $col_blue_d_1;
 }
 	
-.breadcrumbs a:hover span,
-.breadcrumbs a:focus span,
-.breadcrumbs a:active span {
-  color: $col_blue_d_1;
-	text-decoration-line: underline;
-	text-decoration-skip-ink: auto;
-	text-decoration-thickness: 2px;
-	text-underline-offset: 3px;
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+	background-color: $col_grey_200;
   }
 
-.breadcrumbs a:after {
-	content: "/";
-	color: $col_grey_300;
-	margin-left: 0.5em;
-}
-
-.breadcrumbs li > span {
+.breadcrumbs span {
 	color: $col_grey_700;
 }
