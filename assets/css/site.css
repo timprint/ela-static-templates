@@ -1424,7 +1424,7 @@ main {
 .headerUtilities-textItem a:hover,
 .headerUtilities-textItem a:focus,
 .headerUtilities-textItem a:active,
-.headerUtilities-textItem.active a {
+.headerUtilities-textItem.is-active a {
   -webkit-text-decoration-color: #C4D108;
           text-decoration-color: #C4D108;
   color: #133FAD;
@@ -1525,7 +1525,7 @@ main {
 .headerMainNav a:hover,
 .headerMainNav a:focus,
 .headerMainNav a:active,
-.headerMainNav .active a {
+.headerMainNav .is-active a {
   -webkit-text-decoration-color: #C4D108;
           text-decoration-color: #C4D108;
   color: #133FAD;
@@ -1545,7 +1545,7 @@ main {
 .headerMainNav-home:hover,
 .headerMainNav-home:focus,
 .headerMainNav-home:active,
-.headerMainNav-home.active a {
+.headerMainNav-home.is-active a {
   border-bottom-color: #C4D108;
 }
 
@@ -1944,7 +1944,7 @@ main {
   background-color: #E2E8F0;
 }
 
-.secondary-nav .active a {
+.secondary-nav .is-active a {
   color: #fff;
   background-color: #002070;
 }
