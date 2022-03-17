@@ -1,4 +1,8 @@
 <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <symbol id="icon-arrow-circle" viewBox="0 0 26 26" aria-hidden="true" focusable="false">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M2 13C2 6.925 6.925 2 13 2s11 4.925 11 11-4.925 11-11 11S2 19.075 2 13ZM13 0C5.82 0 0 5.82 0 13s5.82 13 13 13 13-5.82 13-13S20.18 0 13 0Zm2.04 8.293a1 1 0 1 0-1.414 1.414L15.92 12H7.667a1 1 0 1 0 0 2h8.252l-2.293 2.293a1 1 0 0 0 1.415 1.414l4-4a1 1 0 0 0 0-1.414l-4-4Z"/>
+	</symbol>
   
   <symbol id="icon-account" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
     <path d="M2 24c0-4.475 4.49-8 9.959-8C17.431 16 22 19.523 22 24h2c0-5.458-5.37-10-12.041-10C5.285 14 0 18.54 0 24h2zM12 0C8.413 0 5.5 2.913 5.5 6.5S8.413 13 12 13s6.5-2.913 6.5-6.5S15.587 0 12 0zm0 2c2.484 0 4.5 2.016 4.5 4.5S14.484 11 12 11 7.5 8.984 7.5 6.5 9.516 2 12 2z"/>

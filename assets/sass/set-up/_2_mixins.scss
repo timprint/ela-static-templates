@@ -146,6 +146,11 @@ $font_family: "Hind",-apple-system,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,Ubu
 	font-size: 3em;
 }
 
+@mixin font-size-64 {
+	font-size: 64px;
+	font-size: 4em;
+}
+
 /*	========================================================================== */
 /*  TEXT DECORATION */
 /*	========================================================================== */

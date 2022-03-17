@@ -99,6 +99,14 @@
       "oAP" : "\/assets\/doc-head.html",
       "oF" : 0
     },
+    "\/assets\/kit-files\/includes\/hero-home.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/hero-home.html",
+      "oF" : 0
+    },
     "\/assets\/kit-files\/includes\/hero-with-title.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -231,6 +239,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/sass\/components\/_icons.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/css\/_icons.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/sass\/components\/_pagination.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -258,6 +280,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/assets\/sass\/components\/untitled file" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/sass\/components\/untitled file",
+      "oF" : 0
     },
     "\/assets\/sass\/print.scss" : {
       "aP" : 1,
