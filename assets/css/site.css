@@ -1789,8 +1789,8 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  -webkit-filter: url("../svg/duotone-filter.svg#duotone");
-          filter: url("../svg/duotone-filter.svg#duotone");
+  -webkit-filter: url("#duotone");
+          filter: url("#duotone");
 }
 
 .hero-image-a {
