@@ -2,6 +2,20 @@
 /*		COPY
 /*	========================================================================== */
 
+.section-header {
+	@include font_bold;
+	@include font-size-13;
+	line-height: 1.2;
+	text-transform: uppercase;
+	margin: 0 0 2.5rem;
+}
+
+.section-header span {
+	display: inline-block;
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid $col_blue;
+}
+
 .copy {
 	
 	max-width: 52em;

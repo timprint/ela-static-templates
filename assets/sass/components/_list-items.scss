@@ -1,0 +1,51 @@
+/*	========================================================================== */
+/*    	LIST ITEMS
+/*	========================================================================== */
+
+.list-item {
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid $col_grey_200;
+	margin-bottom: 1.5em;
+}
+
+.list-item-title {
+	@include font_bold;
+	@include font-size-18;
+	line-height: 1.2;
+	margin: 0 0 0.5em;
+}
+
+.list-item-title a {
+	color: $col_text_base;
+	text-decoration: none;
+	&:hover,
+	&:focus,
+	&:active {
+    color: $col_blue;
+		@include text-decoration-default;
+    }
+}
+
+.list-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.list-meta p {
+	@include font_medium;
+	@include font-size-13;
+	line-height: 1.2;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+
+.list-meta p svg {
+	display: inline-block;
+	width: 1.2em;
+	height: 1.2em;
+	vertical-align: middle;
+	fill: $col_grey_350;
+	margin-right: 0.333em;
+}

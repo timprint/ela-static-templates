@@ -10,7 +10,7 @@
 			
 			<script>if(document.documentElement){document.documentElement.className='hasJS';}</script>
 	
-	    <link rel="stylesheet" href="/assets/css/site.css?ckcachebust=AEDAC2EF493D70E397C04A98322F0758" media="all">
+	    <link rel="stylesheet" href="/assets/css/site.css?ckcachebust=965094C28BC57CC8118DBD93013037BA" media="all">
 	    <link rel="stylesheet" href="/assets/css/print.css?ckcachebust=9DD94C5A4B02914AF42E8E6372E0B709" media="print">
 	
 	</head>
@@ -19,18 +19,17 @@
 		
 		<svg style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg">
 					<filter id="duotone" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-						<feColorMatrix type="matrix" values=".33 .33 .33 0 0
-					            .33 .33 .33 0 0
-					            .33 .33 .33 0 0
-					            0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
-						<feComponentTransfer in="colormatrix" result="componentTransfer">
-					    		<feFuncR type="table" tableValues="0 0.04"/>
-							<feFuncG type="table" tableValues="0 0.18"/>
-							<feFuncB type="table" tableValues="0 0.52"/>
-							<feFuncA type="table" tableValues="0 1"/>
-					  	</feComponentTransfer>
-						<feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
-					</filter>
+					<feColorMatrix type="matrix" values=".33 .33 .33 0 0
+				            .33 .33 .33 0 0
+				            .33 .33 .33 0 0
+				            0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
+					<feComponentTransfer in="colormatrix" result="componentTransfer">
+				    		<feFuncR type="table" tableValues="0 0.11"/>
+						<feFuncG type="table" tableValues="0.02 0.25"/>
+						<feFuncB type="table" tableValues="0.06 0.59"/>
+						<feFuncA type="table" tableValues="0 1"/>
+				  	</feComponentTransfer>
+					<feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
 				</svg>
 				
 				<a class="skipLink" href="#mainContent"><span>Skip to content</span></a>
@@ -110,7 +109,9 @@
 				</header>
 	
 		<main id="mainContent">
-		
+			
+			
+			
 			<!-- 
 					We have classes "hero-image-a" to "hero-image-p"
 					for the 16 images they have supplied.
@@ -126,33 +127,66 @@
 				</div>
 			</div>
 			
+			<style>
+			
+			.temp-image-nav  {
+				padding: 4em 0;
+			}
+			
+			.temp-image-nav {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 4px;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			
+			.temp-image-nav a {
+			  font-weight: 700;
+				font-size: 14px;
+				font-size: 0.875em;
+				line-height: 1.2;
+				text-decoration: none;
+				color: #133FAD;
+				display: block;
+				background-color: #F1F5F9;
+				border-radius: 4px;
+				padding: 0.65em 0.75em 0.45em;
+			}
+			
+			.temp-image-nav a:hover,
+			.temp-image-nav a:focus,
+			.temp-image-nav a:active {
+			  background-color: #E2E8F0;
+			}
+			
+			.temp-image-nav  .is-active a {
+				color: #fff;
+				background-color: #002070;
+			}
+			
+			</style>
+			
 			<div class="u_max-width">
-				<div class="layout-sidebar">
-					
-					<div class="layout-sidebar-side-primary">
-						<nav class="secondary-nav">
-							<ul>
-								<li><a href="/image-tests/home-page-a.html">Image A</a></li>
-								<li><a href="/image-tests/home-page-b.html">Image B</a></li>
-								<li><a href="/image-tests/home-page-c.html">Image C</a></li>
-								<li><a href="/image-tests/home-page-d.html">Image D</a></li>
-								<li><a href="/image-tests/home-page-e.html">Image E</a></li>
-								<li><a href="/image-tests/home-page-f.html">Image F</a></li>
-								<li><a href="/image-tests/home-page-g.html">Image G</a></li>
-								<li><a href="/image-tests/home-page-h.html">Image H</a></li>
-								<li><a href="/image-tests/home-page-i.html">Image I</a></li>
-								<li><a href="/image-tests/home-page-j.html">Image J</a></li>
-								<li><a href="/image-tests/home-page-k.html">Image K</a></li>
-								<li class="is-active"><a href="/image-tests/home-page-l.html">Image L</a></li>
-								<li><a href="/image-tests/home-page-m.html">Image M</a></li>
-								<li><a href="/image-tests/home-page-n.html">Image N</a></li>
-								<li><a href="/image-tests/home-page-o.html">Image O</a></li>
-								<li><a href="/image-tests/home-page-p.html">Image P</a></li>
-							</ul>
-						</nav>
-					</div>
-					
-				</div>
+				<ul class="temp-image-nav">
+					<li class=""><a href="/image-tests/inner-page-a.html">Image A</a></li>
+					<li class=""><a href="/image-tests/inner-page-b.html">Image B</a></li>
+					<li class=""><a href="/image-tests/inner-page-c.html">Image C</a></li>
+					<li class=""><a href="/image-tests/inner-page-d.html">Image D</a></li>
+					<li class=""><a href="/image-tests/inner-page-e.html">Image E</a></li>
+					<li class=""><a href="/image-tests/inner-page-f.html">Image F</a></li>
+					<li class=""><a href="/image-tests/inner-page-g.html">Image G</a></li>
+					<li class=""><a href="/image-tests/inner-page-h.html">Image H</a></li>
+					<li class=""><a href="/image-tests/inner-page-i.html">Image I</a></li>
+					<li class=""><a href="/image-tests/inner-page-j.html">Image J</a></li>
+					<li class=""><a href="/image-tests/inner-page-k.html">Image K</a></li>
+					<li class="is-active"><a href="/image-tests/inner-page-l.html">Image L</a></li>
+					<li class=""><a href="/image-tests/inner-page-m.html">Image M</a></li>
+					<li class=""><a href="/image-tests/inner-page-n.html">Image N</a></li>
+					<li class=""><a href="/image-tests/inner-page-o.html">Image O</a></li>
+					<li class=""><a href="/image-tests/inner-page-p.html">Image P</a></li>
+				</ul>
 			</div>
 		
 		</main>

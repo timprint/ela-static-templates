@@ -102,4 +102,42 @@ main {
 		grid-row: 2 / 3;
 	  }
 }
+
+/*	========================================================================== */
+/*    	LAYOUT : PAGE SECTIONS
+/*	========================================================================== */
+
+.layout-section {
+	padding: 3em 0 5em;
+}
+
+/*	========================================================================== */
+/*    	LAYOUT : COLUMNS
+/*	========================================================================== */
+
+.layout-2-col,
+.layout-3-col {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 4em;
+  @media only screen and (min-width: $break_tablet) {
+		gap: 2em;
+		align-items: stretch;
+	}
+  @media only screen and (min-width: $break_laptop) {
+		gap: 3em;
+	  }
+}
+
+.layout-2-col {
+  @media only screen and (min-width: $break_tablet) {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.layout-3-col {
+  @media only screen and (min-width: $break_tablet) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
   

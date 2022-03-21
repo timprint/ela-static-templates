@@ -699,6 +699,49 @@ main {
 }
 
 /*	========================================================================== */
+/*    	LAYOUT : PAGE SECTIONS
+/*	========================================================================== */
+.layout-section {
+  padding: 3em 0 5em;
+}
+
+/*	========================================================================== */
+/*    	LAYOUT : COLUMNS
+/*	========================================================================== */
+.layout-2-col,
+.layout-3-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4em;
+}
+@media only screen and (min-width: 750px) {
+  .layout-2-col,
+.layout-3-col {
+    gap: 2em;
+    -webkit-align-items: stretch;
+            align-items: stretch;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .layout-2-col,
+.layout-3-col {
+    gap: 3em;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .layout-2-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .layout-3-col {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*	========================================================================== */
 /*    	COMPONENT LIBRARY
 /*	========================================================================== */
 .componentLibrary-nav {
@@ -913,6 +956,22 @@ main {
 /*	========================================================================== */
 /*		COPY
 /*	========================================================================== */
+.section-header {
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  font-size: 0.8125em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0 0 2.5rem;
+}
+
+.section-header span {
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #1544BD;
+}
+
 .copy {
   max-width: 52em;
 }
@@ -1983,6 +2042,68 @@ main {
 }
 
 /*	========================================================================== */
+/*    	LIST ITEMS
+/*	========================================================================== */
+.list-item {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #E2E8F0;
+  margin-bottom: 1.5em;
+}
+
+.list-item-title {
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 1.125em;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+.list-item-title a {
+  color: #333333;
+  text-decoration: none;
+}
+.list-item-title a:hover, .list-item-title a:focus, .list-item-title a:active {
+  color: #1544BD;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.list-meta {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.list-meta p {
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  font-size: 0.8125em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.list-meta p svg {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+  fill: #A6B3C4;
+  margin-right: 0.333em;
+}
+
+/*	========================================================================== */
 /*		PAGINATION
 /*	========================================================================== */
 .pagination {
@@ -2065,6 +2186,80 @@ main {
 }
 
 /*	========================================================================== */
+/*    	TEASER
+/*	========================================================================== */
+.teaser {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+
+.teaser h3 {
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  font-size: em;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.teaser h3 a {
+  color: #333333;
+  text-decoration: none;
+}
+.teaser h3 a:hover, .teaser h3 a:focus, .teaser h3 a:active {
+  color: #1544BD;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.teaser-text {
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+}
+
+.teaser-text p {
+  margin: 0 0 0.5em;
+}
+
+.teaser-link {
+  margin-top: 1em;
+}
+
+.teaser-link a {
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  font-size: 0.75em;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  gap: 0.25rem;
+  -webkit-align-items: center;
+          align-items: center;
+  background-color: #133FAD;
+  padding: 0.333rem 0.333rem 0.333rem 1rem;
+  border-radius: 2rem;
+}
+.teaser-link a:hover, .teaser-link a:focus, .teaser-link a:active {
+  background-color: #B6C207;
+}
+
+.teaser-link a span {
+  display: block;
+  margin-top: 0.1rem;
+}
+
+/*	========================================================================== */
 /*    	MODIFIERS
 /*	========================================================================== */
 /*	========================================================================== */
@@ -2099,6 +2294,10 @@ main {
   .u_max-width {
     width: calc(100vw - 5em);
   }
+}
+
+.u_bg_grey {
+  background-color: #F1F5F9;
 }
 
 /*# sourceMappingURL=site.css.map */

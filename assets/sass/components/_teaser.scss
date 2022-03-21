@@ -1,0 +1,64 @@
+/*	========================================================================== */
+/*    	TEASER
+/*	========================================================================== */
+
+.teaser {
+	display: flex;
+	flex-direction: column;
+}
+
+.teaser h3 {
+	@include font_bold;
+	@include font-size-24;
+	line-height: 1.2;
+	margin: 0 0 1rem;
+}
+
+.teaser h3 a {
+	color: $col_text_base;
+	text-decoration: none;
+	&:hover,
+	&:focus,
+	&:active {
+    color: $col_blue;
+		@include text-decoration-default;
+    }
+}
+
+.teaser-text {
+	flex-grow: 1;
+}
+
+.teaser-text p {
+	margin: 0 0 0.5em;	
+}
+
+.teaser-link {
+	margin-top: 1em;
+}
+
+.teaser-link a {
+	@include font_bold;
+	@include font-size-12;
+	line-height: 1;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	color: #fff;
+	display: inline-flex;
+	gap: 0.25rem;
+	align-items: center;
+	background-color: $col_blue_d_1;
+	padding: 0.333rem 0.333rem 0.333rem 1rem;
+	border-radius: 2rem;
+	&:hover,
+	&:focus,
+	&:active {
+    background-color: $col_green_d_1;
+    }
+}
+
+.teaser-link a span {
+	display: block;
+	margin-top: 0.1rem;
+}
