@@ -1062,6 +1062,108 @@ main {
 .copy ol li {
   margin: 0.75em 0;
 }
+.copy *:first-child {
+  margin-top: 0;
+}
+
+/*	========================================================================== */
+/*    	FILTER FACETS
+/*	========================================================================== */
+.facet-block {
+  background-color: #F1F5F9;
+  padding: 1.25em 1em 0.5em;
+  margin: 0 0 0.5em;
+}
+
+.facet-block__title {
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875em;
+  line-height: 1.2;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #E2E8F0;
+  margin: 0 0 1em;
+}
+
+.facet-block__content {
+  padding: 0;
+  margin: 0;
+}
+
+.facet-block__content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.facet-item {
+  display: -webkit-flex;
+  display: flex;
+  margin: 0.5em 0;
+}
+
+.facet-item a {
+  font-size: 14px;
+  font-size: 0.875em;
+  text-decoration: none;
+  color: #333333;
+}
+
+.facet-item a:hover,
+.facet-item a:focus,
+.facet-item a:active {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  color: #133FAD;
+}
+
+.facets-soft-limit-link {
+  font-size: 14px;
+  font-size: 0.875em;
+  text-decoration: none;
+  color: #333333;
+  display: block;
+  margin-top: 1em;
+}
+
+.facets-soft-limit-link:hover,
+.facets-soft-limit-link:focus,
+.facets-soft-limit-link:active {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  color: #133FAD;
+}
+
+.facets-checkbox {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  width: 1em;
+  height: 1em;
+  margin: 0.0625em 0.25em 0 0;
+}
+
+.facet-item label {
+  font-size: 14px;
+  font-size: 0.875em;
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 500;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  margin: 0 0 0 0.25em;
+}
+
+.facet-item__count {
+  font-size: 0.857em;
+}
 
 /*	========================================================================== */
 /*    	PAGE FOOTER
