@@ -7,7 +7,7 @@
 	background-color: $col_grey_100;
 	border-radius: 6px;
 	padding: 0.125em 0.25em;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 .breadcrumbs ul {
@@ -50,7 +50,7 @@
 .breadcrumbs a:hover,
 .breadcrumbs a:focus,
 .breadcrumbs a:active {
-	background-color: $col_grey_200;
+	@include text-decoration-default();
   }
 
 .breadcrumbs span {

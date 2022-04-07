@@ -1,0 +1,27 @@
+/*	========================================================================== */
+/*		SEARCH RESULTS
+/*	========================================================================== */
+
+.search-result-utilities {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding-bottom: 1em;
+	border-bottom: 1px solid $col_grey_150;
+	margin-bottom: 2em;
+}
+
+.search-result-count p {
+	@include font-size-16;
+	@include font_medium;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.search-result-count span {
+	@include font_bold();
+}
+
+.search-result-filter select {
+	margin: 0;
+}

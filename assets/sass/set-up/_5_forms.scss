@@ -3,12 +3,12 @@
 /*	========================================================================== */
 
 label {
+	@include font_medium();
   color: $col_text_base;
   @include font-size-16;
-	font-weight: bold;
   line-height: 1.5;
   display: block;
-  margin: 1.5em 0 0.25em 3px;
+  margin: 1.5em 0 0.125em 3px;
   }
 
 input[type="text"],
@@ -56,18 +56,18 @@ textarea {
 select {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 	display: block;
-  @include font-size-16;
+  @include font-size-14;
 	font-weight: 400;
 	color: $col_text_base;
 	line-height: 1.2;
-	padding: .5em 1.4em .6em .5em;
+	padding: .5em 2em .6em .5em;
 	width: 100%;
 	max-width: 100%;
 	box-sizing: border-box;
 	margin: 0;
-  border: 5px solid transparent;
-  box-shadow: inset 0 0 0 1px $col_grey_300;
-  border-radius: 5px;
+  border: 1px solid $col_grey_400;
+	box-shadow: inset 1px 1px 2px 0 $col_grey_200;
+  border-radius: 6px;
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
@@ -82,12 +82,9 @@ select::-ms-expand {
 	display: none;
   }
 
-select:hover,
-select:focus,
-select:active {
+select:focus {
   border-color: $col_blue_d_1;
-  box-shadow: inset 0 0 0 1px $col_blue_d_1,
-              0 0 0 3px $col_brand_light;
+  box-shadow: 0 0 0 4px $col_lightblue_300;
 	outline: none;
 	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%230056B5%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
   }
@@ -123,3 +120,127 @@ label.withCheckbox input[type=checkbox] {
   vertical-align: middle;
   margin-right: 0.25em;
   }
+
+/*	========================================================================== */
+/*    	!FORM : SEARCHBAR
+/*	========================================================================== */
+
+.searchBar {
+	display: flex;
+	justify-content: flex-end;
+  background-color: $col_grey_100;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px $col_grey_200;
+  @media only screen and (min-width: $break_tablet) {
+		background-color: #fff;
+	}
+  @media only screen and (min-width: $break_laptop) {
+  	background-color: $col_grey_100;
+	}
+  @media only screen and (min-width: $break_desktop) {
+		flex-grow: 1;
+	}
+}
+
+.searchBar:hover {
+	background-color: #fff;
+  box-shadow: 0 0 0 1px $col_lightblue_300,
+						  0 0 0 4px $col_lightblue_200;
+}
+
+.searchBar:focus-within {
+	background-color: #fff;
+  box-shadow: 0 0 0 1px $col_lightblue_400,
+						  0 0 0 4px $col_lightblue_300;
+}
+
+.searchBar-label {
+	display: block;
+}
+
+.searchBar input,
+.searchBar button {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  @include font-size-16;
+  line-height: 1.5;
+  display: block;
+	background-color: transparent;
+  padding: 0.35em 0.75em;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+}
+
+.searchBar input {
+	min-width: 15.5em;
+	flex-grow: 1;
+  border-radius: 6px 0 0 6px;
+  @media only screen and (min-width: $break_tablet) {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 2.5em;
+		min-width: unset;
+	  }
+  @media only screen and (min-width: $break_laptop) {
+		position: unset;
+		top: auto;
+		right: auto;
+		width: auto;
+		min-width: unset;
+		width: 10em;
+	  }
+  @media only screen and (min-width: $break_desktop) {
+		width: auto;
+	}
+}
+
+.searchBar button {
+  border-radius: 0 6px 6px 0;
+}
+
+.searchBar input:hover,
+.searchBar input:focus,
+.searchBar input:active {
+	border: none;
+	box-shadow: none;
+}
+
+.searchBar input:focus {
+  @media only screen and (min-width: $break_tablet) {
+		position: relative;
+		top: auto;
+		right: auto;
+		width: auto;
+		width: 15.5em;
+	  }
+  @media only screen and (min-width: $break_laptop) {
+		width: auto;
+		width: 10em;
+	}
+  @media only screen and (min-width: $break_desktop) {
+		width: auto;
+	}
+}
+
+.searchBar:hover button,
+.searchBar input:focus + button {
+  background-color: $col_blue_d_1;
+	&:hover,
+	&:focus,
+	&:active {
+  	background-color: $col_blue_d_2;  
+    }
+}
+
+.searchBar button svg {
+  width: 1em;
+	height: 1em;
+	fill: $col_blue_d_1;
+}
+
+.searchBar:hover button svg,
+.searchBar input:focus + button svg {
+	fill: #fff;
+}

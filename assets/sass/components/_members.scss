@@ -1,0 +1,98 @@
+/*	========================================================================== */
+/*		MEMBERS
+/*	========================================================================== */
+
+.memberList {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.memberItem {
+	padding: 0 0 1em;
+	margin: 1em 0;
+}
+
+.memberItem:not(:last-child) {
+	border-bottom: 1px solid $col_grey_150;
+}
+
+.memberItem-header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.memberItem-name {
+	@include font-size-28;
+	margin: 0;
+}
+
+.memberItem-name a {
+	color: $col_blue_d_1;
+	text-decoration: none;
+}
+
+.memberItem-name a:hover,
+.memberItem-name a:focus,
+.memberItem-name a:active {
+	color: $col_blue_d_1;
+	@include text-decoration-default();
+}
+
+.memberItem-company {
+	@include font-size-14;
+	@include font_medium();
+	margin: 0;
+}
+
+.memberItem-access {
+	@include font_medium();
+	@include font-size-12;
+	line-height: 1.2;
+	text-align: center;
+	// text-transform: uppercase;
+	display: inline-block;
+	background-color: $col_grey_100;
+	padding: 0.66em 0.75em 0.33em;
+	border-radius: 6px;
+	margin: 0.5em 0 0;
+}
+
+.memberItem-regions {
+	display: flex;
+	margin-top: 0.5em;
+}
+
+.memberItem-regions p {
+	@include font_medium();
+	@include font-size-12;
+	line-height: 1;
+	text-transform: uppercase;
+	color: $col_grey_400;
+	padding: 0 0.5em 0 0;
+	border-right: 1px solid $col_grey_150;
+	margin: 1px 0.5em 0 0;
+}
+
+.memberItem-regions ul {
+	@include font-size-13;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.memberItem-regions ul li {
+	line-height: 1;
+	display: block;
+	margin: 0;
+}
+
+.memberItem-regions ul li:not(:last-child):after {
+	content: "/";
+	color: $col_grey_300;
+	margin: 0 0.33em 0 0.5em;
+}

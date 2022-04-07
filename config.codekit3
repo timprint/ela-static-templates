@@ -363,6 +363,14 @@
       "oAP" : "\/includes\/hero-home.html",
       "oF" : 0
     },
+    "\/assets\/kit-files\/includes\/hero-with-title-second-level.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/includes\/hero-with-title-second-level.html",
+      "oF" : 0
+    },
     "\/assets\/kit-files\/includes\/hero-with-title.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -377,6 +385,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/includes\/js-footer.html",
+      "oF" : 0
+    },
+    "\/assets\/kit-files\/includes\/member-profile.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/includes\/member-profile.html",
       "oF" : 0
     },
     "\/assets\/kit-files\/includes\/page-footer.kit" : {
@@ -402,6 +418,14 @@
       "oA" : 0,
       "oAP" : "\/index.html",
       "oF" : 2
+    },
+    "\/assets\/kit-files\/page-sidebar-member-list.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-sidebar-member-list.html",
+      "oF" : 0
     },
     "\/assets\/kit-files\/page-sidebar.kit" : {
       "cB" : 1,
@@ -545,6 +569,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/sass\/components\/_members.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/css\/_members.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/sass\/components\/_pagination.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -554,6 +592,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/sass\/css\/_pagination.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/sass\/components\/_search-results.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/css\/_search-results.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1019,6 +1071,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/index.html",
+      "oF" : 0
+    },
+    "\/page-sidebar-member-list.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-sidebar-member-list.html",
       "oF" : 0
     },
     "\/page-sidebar.html" : {
