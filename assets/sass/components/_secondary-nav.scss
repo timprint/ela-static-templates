@@ -9,7 +9,16 @@
 .secondary-nav ul {
 	list-style: none;
 	padding: 0;
+	margin: 0;
+}
+
+.secondary-nav > ul {
 	margin: 0 0 1em;
+}
+
+.secondary-nav ul ul {
+	margin-top: 4px;
+	margin-left: 1em;
 }
 
 .secondary-nav li + li {
@@ -33,7 +42,11 @@
     }
 }
 
-.secondary-nav .is-active a {
+.secondary-nav ul ul a {
+	@include font_medium;
+}
+
+.secondary-nav .is-active > a {
 	color: #fff;
 	background-color: $col_blue_d_2;
 }
