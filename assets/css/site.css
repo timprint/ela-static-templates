@@ -980,6 +980,60 @@ main {
 /*    	COMPONENTS
 /*	========================================================================== */
 /*	========================================================================== */
+/*		BIG GREEN BUTTON
+/*	========================================================================== */
+a.big-green-button,
+.copy a.big-green-button,
+a.big-green-button:visited,
+.copy a.big-green-button:visited {
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-size: 1.25em;
+  line-height: 1.33;
+  color: #fff;
+  text-decoration: none;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  gap: 0.75rem;
+  background-color: #133FAD;
+  padding: 1rem 0.5rem 0.5rem 1.5rem;
+  border-radius: 1.5em;
+}
+a.big-green-button:focus,
+.copy a.big-green-button:focus,
+a.big-green-button:visited:focus,
+.copy a.big-green-button:visited:focus {
+  background-color: #002070;
+  box-shadow: 0 0 0 6px #DBEAFE;
+  outline: none;
+}
+a.big-green-button:hover, a.big-green-button:active,
+.copy a.big-green-button:hover,
+.copy a.big-green-button:active,
+a.big-green-button:visited:hover,
+a.big-green-button:visited:active,
+.copy a.big-green-button:visited:hover,
+.copy a.big-green-button:visited:active {
+  background-color: #B6C207;
+}
+
+a.big-green-button::after,
+.copy a.big-green-button::after {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 2em;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  -webkit-flex-grow: 0;
+          flex-grow: 0;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2026%2026%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20fill%3D%22%23FFFFFF%22%20d%3D%22M2%2013C2%206.925%206.925%202%2013%202s11%204.925%2011%2011-4.925%2011-11%2011S2%2019.075%202%2013ZM13%200C5.82%200%200%205.82%200%2013s5.82%2013%2013%2013%2013-5.82%2013-13S20.18%200%2013%200Zm2.04%208.293a1%201%200%201%200-1.414%201.414L15.92%2012H7.667a1%201%200%201%200%200%202h8.252l-2.293%202.293a1%201%200%200%200%201.415%201.414l4-4a1%201%200%200%200%200-1.414l-4-4Z%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  margin: -0.333em 0 0;
+}
+
+/*	========================================================================== */
 /*		BREADCRUMBS
 /*	========================================================================== */
 .breadcrumbs {
