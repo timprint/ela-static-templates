@@ -1218,6 +1218,147 @@ main {
 }
 
 /*	========================================================================== */
+/*		EVENTS
+/*	========================================================================== */
+.event-month {
+  font-size: 20px;
+  font-size: 1.25em;
+  line-height: 1;
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  margin: 0 0 1em;
+}
+
+.eventList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  -webkit-align-items: stretch;
+          align-items: stretch;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3em;
+}
+
+.eventListItem {
+  padding: 0;
+  margin: 0;
+}
+
+.eventListItem a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  height: 100%;
+  background-color: #002070;
+  padding: 2em;
+}
+
+.m_previous .eventListItem a {
+  background-color: #475569;
+}
+
+.eventListItem a:focus,
+.eventListItem a:hover,
+.eventListItem a:active {
+  box-shadow: 0 0 0 0.5em #DBEAFE;
+  outline: none;
+}
+
+.m_previous .eventListItem a:focus,
+.m_previous .eventListItem a:hover,
+.m_previous .eventListItem a:active {
+  box-shadow: 0 0 0 0.5em #E2E8F0;
+}
+
+.eventListItem a:hover,
+.eventListItem a:active {
+  background-color: #133FAD;
+}
+
+.m_previous .eventListItem a:hover,
+.m_previous .eventListItem a:active {
+  background-color: #64748B;
+}
+
+.eventListItem time {
+  color: #90affd;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 1em;
+}
+
+.m_previous .eventListItem time {
+  color: #A6B3C4;
+}
+
+.eventListItem-month {
+  font-size: 16px;
+  font-size: 1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: block;
+}
+
+.eventListItem-day {
+  font-size: 24px;
+  font-size: em;
+  line-height: 1;
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  font-variant-numeric: lining-nums;
+  display: block;
+}
+
+.eventListItem-name {
+  font-size: 28px;
+  font-size: 1.5em;
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  margin: 0 0 1em;
+}
+
+.eventListItem-meta {
+  line-height: 1.2;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+  row-gap: 0.5em;
+  padding: 0;
+  margin: 1em 0 0;
+}
+
+.eventListItem-meta dt,
+.eventListItem-meta dd {
+  padding: 0;
+  margin: 0;
+}
+
+.eventListItem-meta dt {
+  font-size: 12px;
+  font-size: 0.6875em;
+  text-transform: uppercase;
+  color: #90affd;
+  margin-top: 2px;
+}
+
+.m_previous .eventListItem-meta dt {
+  color: #A6B3C4;
+}
+
+.eventListItem-meta dd {
+  font-size: 14px;
+  font-size: 0.875em;
+  color: #fff;
+}
+
+/*	========================================================================== */
 /*    	FILTER FACETS
 /*	========================================================================== */
 .facet-block {
