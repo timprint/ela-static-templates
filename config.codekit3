@@ -459,6 +459,14 @@
       "oAP" : "\/page-sidebar.html",
       "oF" : 0
     },
+    "\/assets\/kit-files\/page-single-column.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-single-column.html",
+      "oF" : 0
+    },
     "\/assets\/kit-files\/search.kit" : {
       "cB" : 1,
       "ft" : 2048,

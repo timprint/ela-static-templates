@@ -21,7 +21,14 @@
 	  }
 }
 
-.hero-title {
+.hero-layout-single-column {
+	display: grid;
+	gap: 1em;
+	max-width: $max_width_narrow;
+	margin: 0 auto;
+}
+
+.hero-layout-sidebar .hero-title {
   @media only screen and (min-width: $break_laptop) {
 		grid-column: 2 / 3;
 		grid-row: 1 / 3;

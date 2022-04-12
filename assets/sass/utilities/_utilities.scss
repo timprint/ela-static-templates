@@ -28,6 +28,10 @@
 		width: calc(100vw - 5em);
 	  }
 }
+	
+.u_max-width-narrow {
+	max-width: $max_width_narrow;
+}
 
 .u_bg_grey {
 	background-color: $col_grey_100;
