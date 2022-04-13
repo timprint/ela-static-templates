@@ -36,3 +36,14 @@
 .u_bg_grey {
 	background-color: $col_grey_100;
 }
+
+.u_flex {
+	display: flex;
+}
+
+.u_gap_05 { gap: 0.5em; }
+.u_gap_1  { gap: 1em; }
+
+.u_items_end {
+	align-items: flex-end;
+}

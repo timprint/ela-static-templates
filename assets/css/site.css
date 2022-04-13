@@ -439,7 +439,7 @@ textarea {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 16px;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.2;
   color: #333333;
   display: block;
   width: 100%;
@@ -518,13 +518,13 @@ textarea:focus::placeholder {
 select {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   display: block;
-  font-size: 14px;
-  font-size: 0.875em;
+  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   color: #333333;
   line-height: 1.2;
-  padding: 0.5em 2em 0.6em 0.5em;
-  width: 100%;
+  padding: 0.35em 2em 0.35em 0.5em;
+  width: auto;
   max-width: 100%;
   box-sizing: border-box;
   margin: 0;
@@ -1113,6 +1113,80 @@ a.big-green-button::after,
 }
 
 /*	========================================================================== */
+/*    	BRIEDFING LIST
+/*	========================================================================== */
+.briefing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3em;
+}
+
+.briefingItem {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #E2E8F0;
+  margin-bottom: 1em;
+}
+
+.briefingItem-title {
+  font-size: 22px;
+  font-size: 1.375em;
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  margin: 0 0 0.25em;
+}
+
+.briefingItem-title a {
+  text-decoration: none;
+  color: #333333;
+}
+.briefingItem-title a:hover, .briefingItem-title a:focus, .briefingItem-title a:active {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  color: #133FAD;
+}
+
+.briefingItem-meta {
+  line-height: 1.2;
+  display: grid;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: start;
+          justify-content: start;
+  -webkit-column-gap: 0.5em;
+     -moz-column-gap: 0.5em;
+          column-gap: 0.5em;
+  row-gap: 0.333em;
+  margin: 0.5em 0 1em;
+}
+
+.briefingItem-meta dt {
+  grid-column: 1/2;
+  padding: 0;
+  margin: 0;
+}
+
+.briefingItem-meta dt svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+  fill: #94A3B8;
+}
+
+.briefingItem-meta dd {
+  font-size: 15px;
+  font-size: 0.9375em;
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 500;
+  grid-column: 2/3;
+  padding: 0.25em 0 0;
+  margin: 0;
+}
+
+/*	========================================================================== */
 /*		BUTTON
 /*	========================================================================== */
 .button {
@@ -1128,9 +1202,10 @@ a.big-green-button::after,
   -webkit-align-items: center;
           align-items: center;
   background-color: #133FAD;
-  padding: 0 1.25em;
+  padding: 0.35em 0.75em;
   outline: none;
   border: none;
+  border: 1px solid #002070;
   border-radius: 6px;
   transition: all 0.2s ease;
 }
@@ -2697,6 +2772,45 @@ a.big-green-button::after,
 }
 
 /*	========================================================================== */
+/*    	TAGS
+/*	========================================================================== */
+.tags {
+  font-size: 14px;
+  font-size: 0.875em;
+  line-height: 1.2;
+  list-style: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 0.5em;
+  padding: 0;
+  margin: 0.5em 0;
+}
+
+.tags li {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.tags li a {
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #133FAD;
+  display: block;
+  background-color: #DBEAFE;
+  padding: 0.5em 0.75em 0.2em;
+  border-radius: 6px;
+}
+.tags li a:hover, .tags li a:focus, .tags li a:active {
+  color: #002070;
+  background-color: #93C5FD;
+}
+
+/*	========================================================================== */
 /*    	TEASER
 /*	========================================================================== */
 .teaser {
@@ -2813,6 +2927,24 @@ a.big-green-button::after,
 
 .u_bg_grey {
   background-color: #F1F5F9;
+}
+
+.u_flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.u_gap_05 {
+  gap: 0.5em;
+}
+
+.u_gap_1 {
+  gap: 1em;
+}
+
+.u_items_end {
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
 }
 
 /*# sourceMappingURL=site.css.map */

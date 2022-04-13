@@ -443,13 +443,13 @@
       "oAP" : "\/page-event-list.html",
       "oF" : 0
     },
-    "\/assets\/kit-files\/page-management-committee.kit" : {
+    "\/assets\/kit-files\/page-sidebar-ela-briefing.kit" : {
       "cB" : 1,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/page-management-committee.html",
-      "oF" : 1
+      "oAP" : "\/page-sidebar-ela-briefing.html",
+      "oF" : 0
     },
     "\/assets\/kit-files\/page-sidebar-member-list.kit" : {
       "cB" : 1,
@@ -506,6 +506,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/sass\/css\/_breadcrumbs.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/sass\/components\/_briefing-list.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/css\/_briefing-list.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -693,6 +707,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/sass\/components\/_tags.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/css\/_tags.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/sass\/components\/_teaser.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -706,6 +734,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/assets\/sass\/components\/untitled file" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/sass\/components\/untitled file",
+      "oF" : 0
     },
     "\/assets\/sass\/print.scss" : {
       "aP" : 1,
@@ -1155,6 +1191,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-event-list.html",
+      "oF" : 0
+    },
+    "\/page-sidebar-ela-briefing.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-sidebar-ela-briefing.html",
       "oF" : 0
     },
     "\/page-sidebar-member-list.html" : {

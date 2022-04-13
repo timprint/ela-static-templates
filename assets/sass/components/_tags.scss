@@ -1,0 +1,35 @@
+/*	========================================================================== */
+/*    	TAGS
+/*	========================================================================== */
+
+.tags {
+	@include font-size-14();
+	line-height: 1.2;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	padding: 0;
+	margin: 0.5em 0;
+}
+
+.tags li {
+	display: flex;
+	align-items: center;
+}
+
+.tags li a {
+	@include font_medium();
+	text-decoration: none;
+	color: $col_blue_d_1;
+	display: block;
+	background-color: $col_lightblue_200;
+	padding: 0.5em 0.75em 0.2em;
+	border-radius: 6px;
+	&:hover,
+	&:focus,
+	&:active {
+		color: $col_blue_d_2;
+  	background-color: $col_lightblue_400;  
+    }
+}

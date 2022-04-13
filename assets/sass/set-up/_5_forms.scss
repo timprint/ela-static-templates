@@ -21,7 +21,7 @@ input[type="search"],
 textarea {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   @include font-size-16;
-  line-height: 1.5;
+  line-height: 1.2;
 	color: $col_text_base;
   display: block;
   width: 100%;
@@ -56,12 +56,12 @@ textarea {
 select {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 	display: block;
-  @include font-size-14;
+  @include font-size-16;
 	font-weight: 400;
 	color: $col_text_base;
 	line-height: 1.2;
-	padding: .5em 2em .6em .5em;
-	width: 100%;
+	padding: 0.35em 2em 0.35em .5em;
+	width: auto;
 	max-width: 100%;
 	box-sizing: border-box;
 	margin: 0;

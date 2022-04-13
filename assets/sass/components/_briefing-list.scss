@@ -1,0 +1,63 @@
+/*	========================================================================== */
+/*    	BRIEDFING LIST
+/*	========================================================================== */
+
+.briefing-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 3em;
+}
+
+.briefingItem {
+	padding-bottom: 1em;
+	border-bottom: 1px solid $col_grey_200;
+	margin-bottom: 1em;
+}
+
+.briefingItem-title {
+	@include font-size-22();
+	@include font_bold();
+	margin: 0 0 0.25em;
+}
+
+.briefingItem-title a {
+	text-decoration: none;
+	color: $col_text_base;
+	&:hover,
+	&:focus,
+	&:active {
+  	@include text-decoration-default();
+		color: $col_blue_d_1;
+    }
+}
+
+.briefingItem-meta {
+	line-height: 1.2;
+	display: grid;
+	align-items: center;
+	justify-content: start;
+	column-gap: 0.5em;
+	row-gap: 0.333em;
+	margin: 0.5em 0 1em;
+}
+
+.briefingItem-meta dt {
+	grid-column: 1 / 2;
+	padding: 0;
+	margin: 0;
+}
+
+.briefingItem-meta dt svg {
+	display: block;
+	width: 1em;
+	height: 1em;
+	fill: $col_grey_400;
+}
+
+.briefingItem-meta dd {
+	@include font-size-15();
+	@include font_medium();
+	grid-column: 2 / 3;
+	padding: 0.25em 0 0;
+	margin: 0;
+}

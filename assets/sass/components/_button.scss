@@ -11,9 +11,10 @@
 	display: inline-flex;
 	align-items: center;
 	background-color: $col_blue_d_1;
-	padding: 0 1.25em;
+  padding: 0.35em 0.75em;
 	outline: none;
 	border: none;
+  border: 1px solid $col_blue_d_2;
 	border-radius: 6px;
 	transition: all 0.2s ease;
 }
