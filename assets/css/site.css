@@ -1006,11 +1006,13 @@ a.big-green-button:visited,
   background-color: #133FAD;
   padding: 1rem 0.5rem 0.5rem 1.5rem;
   border-radius: 1.5em;
+  margin: 1em 0;
 }
 a.big-green-button:focus,
 .copy a.big-green-button:focus,
 a.big-green-button:visited:focus,
 .copy a.big-green-button:visited:focus {
+  color: #fff;
   background-color: #002070;
   box-shadow: 0 0 0 6px #DBEAFE;
   outline: none;
@@ -1022,6 +1024,7 @@ a.big-green-button:visited:hover,
 a.big-green-button:visited:active,
 .copy a.big-green-button:visited:hover,
 .copy a.big-green-button:visited:active {
+  color: #fff;
   background-color: #B6C207;
 }
 

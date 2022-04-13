@@ -16,13 +16,16 @@ a.big-green-button:visited,
 	background-color: $col_blue_d_1;
 	padding: 1rem 0.5rem 0.5rem 1.5rem;
 	border-radius: 1.5em;
+	margin: 1em 0;
 	&:focus {
+		color: #fff;
     background-color: $col_blue_d_2;
   	box-shadow: 0 0 0 6px $col_lightblue_200;
 		outline: none;
 	}
 	&:hover,
 	&:active {
+		color: #fff;
     background-color: $col_green_d_1;
     }
 }

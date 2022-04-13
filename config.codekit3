@@ -443,6 +443,14 @@
       "oAP" : "\/page-event-list.html",
       "oF" : 0
     },
+    "\/assets\/kit-files\/page-management-committee.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-management-committee.html",
+      "oF" : 1
+    },
     "\/assets\/kit-files\/page-sidebar-member-list.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -1163,6 +1171,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-sidebar.html",
+      "oF" : 0
+    },
+    "\/page-single-column.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-single-column.html",
       "oF" : 0
     },
     "\/README.html" : {
