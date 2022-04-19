@@ -359,7 +359,7 @@
       "cB" : 1,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/includes\/event-list-item.html",
       "oF" : 0
     },
@@ -734,14 +734,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/assets\/sass\/components\/untitled file" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/sass\/components\/untitled file",
-      "oF" : 0
     },
     "\/assets\/sass\/print.scss" : {
       "aP" : 1,
