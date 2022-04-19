@@ -1185,6 +1185,14 @@
       "oAP" : "\/page-event-list.html",
       "oF" : 0
     },
+    "\/page-event.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-event.html",
+      "oF" : 0
+    },
     "\/page-sidebar-ela-briefing.html" : {
       "cB" : 0,
       "ft" : 8192,
