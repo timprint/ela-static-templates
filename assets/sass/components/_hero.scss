@@ -4,7 +4,15 @@
 
 .hero {
 	color: #fff;
-	position: relative;
+	display: grid;
+	grid-template-columns: auto minmax(auto,$max_width) auto;
+	background-color: $col_blue_d_2;
+}
+
+.hero .u_max-width {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	z-index: 2;
 }
 
 /*	========================================================================== */
@@ -137,13 +145,8 @@
 /*	========================================================================== */
 
 [class^="hero-image"] {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: -1;
-	background-color: $col_blue_d_2;
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;

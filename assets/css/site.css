@@ -2240,7 +2240,15 @@ a.big-green-button::after,
 /*	========================================================================== */
 .hero {
   color: #fff;
-  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(auto, 74em) auto;
+  background-color: #002070;
+}
+
+.hero .u_max-width {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  z-index: 2;
 }
 
 /*	========================================================================== */
@@ -2392,13 +2400,8 @@ a.big-green-button::after,
 /*		HERO : IMAGES
 /*	========================================================================== */
 [class^=hero-image] {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #002070;
+  grid-column: 1/4;
+  grid-row: 1/2;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
