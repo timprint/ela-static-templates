@@ -451,6 +451,14 @@
       "oAP" : "\/page-sidebar-ela-briefing.html",
       "oF" : 0
     },
+    "\/assets\/kit-files\/page-sidebar-management-committee.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-sidebar-management-committee.html",
+      "oF" : 0
+    },
     "\/assets\/kit-files\/page-sidebar-member-list.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -679,6 +687,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/sass\/components\/_person.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/css\/_person.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/sass\/components\/_search-results.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -734,6 +756,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/assets\/sass\/components\/untitled file" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/sass\/components\/untitled file",
+      "oF" : 0
     },
     "\/assets\/sass\/print.scss" : {
       "aP" : 1,
@@ -1199,6 +1229,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-sidebar-ela-briefing.html",
+      "oF" : 0
+    },
+    "\/page-sidebar-management-committee.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-sidebar-management-committee.html",
       "oF" : 0
     },
     "\/page-sidebar-member-list.html" : {
