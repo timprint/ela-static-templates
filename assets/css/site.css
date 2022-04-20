@@ -2715,6 +2715,12 @@ a.big-green-button::after,
   margin: 0 0 2em 0;
 }
 
+div.person {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin: 2em 0;
+}
+
 .person-img {
   -webkit-flex-basis: 191px;
           flex-basis: 191px;
@@ -2730,12 +2736,12 @@ a.big-green-button::after,
           flex-basis: 36em;
 }
 
-.person-position {
+.person-role {
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
   font-size: 12px;
   font-size: 0.75em;
   line-height: 1.2;
-  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
-  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   color: #133FAD;
@@ -2752,10 +2758,34 @@ a.big-green-button::after,
   margin: 0;
 }
 
+.person-positions {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  gap: 1px;
+  background-color: #E2E8F0;
+}
+
 .person-company {
   font-size: 14px;
   font-size: 0.875em;
   color: #64748B;
+  background-color: #fff;
+  margin: 0;
+}
+
+.person-committee {
+  font-size: 14px;
+  font-size: 0.875em;
+  color: #64748B;
+  background-color: #fff;
+  padding-top: 0.333em;
+  margin: 0;
+}
+
+.person-biog {
+  margin: 1em 0;
 }
 
 .person-biog p {

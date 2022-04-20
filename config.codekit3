@@ -435,6 +435,14 @@
       "oAP" : "\/page-big-green-button.html",
       "oF" : 0
     },
+    "\/assets\/kit-files\/page-committee-member.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-committee-member.html",
+      "oF" : 0
+    },
     "\/assets\/kit-files\/page-event-list.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -756,14 +764,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/assets\/sass\/components\/untitled file" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/sass\/components\/untitled file",
-      "oF" : 0
     },
     "\/assets\/sass\/print.scss" : {
       "aP" : 1,
