@@ -114,4 +114,32 @@
 		margin-top: 0;
 	}
 	
+	a[href^="#"] {
+		text-decoration: none;
+		color: #fff;
+		position: relative;
+		background-color: $col_blue_d_1;
+		padding: 0 0.5em 0 2em;
+		border-radius: 3px;
+		&:hover,
+		&:focus,
+		&:active {
+    	background-color: $col_green_d_2;
+    }
+	}
+	
+	a[href^="#"]:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: calc(50% - 0.5em);
+		left: 0.5em;
+		width: 1em;
+		height: 1em;
+		background-image: url("/assets/images/anchor-link.svg");
+		background-repeat: no-repeat;
+		background-size: 1em 1em;
+		background-position: center center;
+	}
+	
 }

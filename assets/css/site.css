@@ -1378,6 +1378,30 @@ a.big-green-button::after,
 .copy *:first-child {
   margin-top: 0;
 }
+.copy a[href^="#"] {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  background-color: #133FAD;
+  padding: 0 0.5em 0 2em;
+  border-radius: 3px;
+}
+.copy a[href^="#"]:hover, .copy a[href^="#"]:focus, .copy a[href^="#"]:active {
+  background-color: #A7B207;
+}
+.copy a[href^="#"]:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: 0.5em;
+  width: 1em;
+  height: 1em;
+  background-image: url("/assets/images/anchor-link.svg");
+  background-repeat: no-repeat;
+  background-size: 1em 1em;
+  background-position: center center;
+}
 
 /*	========================================================================== */
 /*		EVENTS
