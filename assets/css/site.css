@@ -587,6 +587,7 @@ label.withCheckbox input[type=checkbox] {
 /*    	!FORM : SEARCHBAR
 /*	========================================================================== */
 .searchBar {
+  position: relative;
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: flex-end;
@@ -641,13 +642,16 @@ label.withCheckbox input[type=checkbox] {
 }
 
 .searchBar input {
-  min-width: 15.5em;
   -webkit-flex-grow: 1;
           flex-grow: 1;
   border-radius: 6px 0 0 6px;
 }
+
+.headerSearch .searchBar input {
+  min-width: 15.5em;
+}
 @media only screen and (min-width: 750px) {
-  .searchBar input {
+  .headerSearch .searchBar input {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -657,7 +661,7 @@ label.withCheckbox input[type=checkbox] {
   }
 }
 @media only screen and (min-width: 1000px) {
-  .searchBar input {
+  .headerSearch .searchBar input {
     position: unset;
     top: auto;
     right: auto;
@@ -667,13 +671,30 @@ label.withCheckbox input[type=checkbox] {
   }
 }
 @media only screen and (min-width: 1280px) {
-  .searchBar input {
+  .headerSearch .searchBar input {
     width: auto;
   }
 }
 
 .searchBar button {
   border-radius: 0 6px 6px 0;
+}
+
+@media only screen and (min-width: 750px) {
+  .headerSearch .searchBar button {
+    border-radius: 6px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .headerSearch .searchBar button {
+    border-radius: 0 6px 6px 0;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .headerSearch .searchBar input:focus + button {
+    border-radius: 0 6px 6px 0;
+  }
 }
 
 .searchBar input:hover,

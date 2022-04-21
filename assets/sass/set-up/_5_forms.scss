@@ -126,6 +126,7 @@ label.withCheckbox input[type=checkbox] {
 /*	========================================================================== */
 
 .searchBar {
+	position: relative;
 	display: flex;
 	justify-content: flex-end;
   background-color: $col_grey_100;
@@ -172,9 +173,12 @@ label.withCheckbox input[type=checkbox] {
 }
 
 .searchBar input {
-	min-width: 15.5em;
 	flex-grow: 1;
   border-radius: 6px 0 0 6px;
+}
+
+.headerSearch .searchBar input {
+	min-width: 15.5em;
   @media only screen and (min-width: $break_tablet) {
 		position: absolute;
 		top: 0;
@@ -198,6 +202,21 @@ label.withCheckbox input[type=checkbox] {
 
 .searchBar button {
   border-radius: 0 6px 6px 0;
+}
+
+.headerSearch .searchBar button {
+  @media only screen and (min-width: $break_tablet) {
+  	border-radius: 6px;
+		}
+  @media only screen and (min-width: $break_laptop) {
+  	border-radius: 0 6px 6px 0;
+	  }
+}
+
+.headerSearch .searchBar input:focus + button {
+  @media only screen and (min-width: $break_tablet) {
+  	border-radius: 0 6px 6px 0;
+	}
 }
 
 .searchBar input:hover,
