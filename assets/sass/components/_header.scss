@@ -319,7 +319,7 @@
 .headerMainNav-home:hover,
 .headerMainNav-home:focus,
 .headerMainNav-home:active,
-.headerMainNav-home.is-active a {
+.is-active .headerMainNav-home {
 	border-bottom-color: $col_green;
 }
 
