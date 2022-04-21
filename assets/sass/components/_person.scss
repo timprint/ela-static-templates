@@ -55,6 +55,17 @@ div.person {
 	margin: 0;
 }
 
+.person-name a {
+	color: $col_text_base;
+	text-decoration: none;
+	&:hover,
+	&:focus,
+	&:active {
+  	color: $col_blue_d_1;
+		@include text-decoration-default();
+    }
+}
+
 .person-positions {
 	display: inline-flex;
 	flex-direction: column;

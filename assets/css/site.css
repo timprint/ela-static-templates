@@ -2758,6 +2758,20 @@ div.person {
   margin: 0;
 }
 
+.person-name a {
+  color: #333333;
+  text-decoration: none;
+}
+.person-name a:hover, .person-name a:focus, .person-name a:active {
+  color: #133FAD;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
 .person-positions {
   display: -webkit-inline-flex;
   display: inline-flex;
