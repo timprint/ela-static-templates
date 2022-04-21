@@ -1383,7 +1383,7 @@ a.big-green-button::after,
   color: #fff;
   position: relative;
   background-color: #133FAD;
-  padding: 0 0.5em 0 2em;
+  padding: 0.2em 0.5em 0.05em 2em;
   border-radius: 3px;
 }
 .copy a[href^="#"]:hover, .copy a[href^="#"]:focus, .copy a[href^="#"]:active {
