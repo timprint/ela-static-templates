@@ -1289,7 +1289,7 @@ a.big-green-button::after,
   max-width: 56em;
 }
 .copy .lede {
-  margin-bottom: 1.5em;
+  margin: 1.5em 0;
 }
 .copy .lede p {
   font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
@@ -1340,17 +1340,17 @@ a.big-green-button::after,
 .copy h2 {
   font-size: 28px;
   font-size: 1.5em;
-  margin: 2em 0 0.5em;
+  margin: 1.5em 0 0.5em;
 }
 .copy h3 {
   font-size: 20px;
   font-size: 1.25em;
-  margin: 2em 0 0.5em;
+  margin: 1.5em 0 0.5em;
 }
 .copy h4 {
   font-size: 16px;
   font-size: 1em;
-  margin: 2em 0 0.5em;
+  margin: 1.5em 0 0.5em;
 }
 .copy h5, .copy h6 {
   font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
@@ -1360,7 +1360,7 @@ a.big-green-button::after,
   line-height: 1.2;
   text-transform: uppercase;
   color: #133FAD;
-  margin: 2em 0 0.5em;
+  margin: 1.5em 0 0.5em;
 }
 .copy ul, .copy ol {
   margin: 1em 0 2em;
@@ -1375,7 +1375,7 @@ a.big-green-button::after,
 .copy ol li {
   margin: 0.75em 0;
 }
-.copy *:first-child {
+.copy > *:first-child {
   margin-top: 0;
 }
 .copy a[href^="#"] {
@@ -1404,7 +1404,7 @@ a.big-green-button::after,
 }
 
 /*	========================================================================== */
-/*		EVENTS
+/*		EVENTS LIST
 /*	========================================================================== */
 .eventList {
   list-style: none;
@@ -1549,6 +1549,64 @@ a.big-green-button::after,
 
 .eventListItem.m_previous .eventListItem-meta dd {
   color: #64748B;
+}
+
+/*	========================================================================== */
+/*		EVENT PAGE
+/*	========================================================================== */
+.event-section {
+  padding-bottom: 1em;
+  border-bottom: 2px solid #E2E8F0;
+  margin: 1em 0;
+}
+@media only screen and (min-width: 750px) {
+  .event-section {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+.event-section:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.event-section > *:first-child {
+  margin-top: 0;
+}
+
+.event-section > *:last-child {
+  margin-bottom: 0;
+}
+
+.event-section dl {
+  display: inline-grid;
+  grid-template-columns: auto 1fr;
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em;
+  row-gap: 2px;
+  padding: 0;
+  margin: 0 0 1em;
+}
+
+.event-section dt {
+  font-size: 13px;
+  font-size: 0.8125em;
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1544BD;
+  grid-column: 1/2;
+  padding: 0.825em 0 0;
+  margin: 0;
+}
+
+.event-section dd {
+  grid-column: 2/3;
+  background-color: #F1F5F9;
+  padding: 0.5em 1em 0.3em;
+  margin: 0;
 }
 
 /*	========================================================================== */
@@ -2584,6 +2642,26 @@ a.big-green-button::after,
 }
 
 /*	========================================================================== */
+/*		MAP
+/*	========================================================================== */
+/* GOOGLE MAP */
+.map {
+  position: relative;
+  padding-bottom: 66.666%;
+  height: 0;
+  overflow: hidden;
+  margin: 0 0 2em;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*	========================================================================== */
 /*		MEMBERS
 /*	========================================================================== */
 .memberList {
@@ -3086,6 +3164,26 @@ div.person {
 .teaser-link a span {
   display: block;
   margin-top: 0.1rem;
+}
+
+/*	========================================================================== */
+/*		VIDEO
+/*	========================================================================== */
+/* YOUTUBE EMEBD */
+.video {
+  position: relative;
+  padding-bottom: 66.666%;
+  height: 0;
+  overflow: hidden;
+  margin: 0 0 2em;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*	========================================================================== */

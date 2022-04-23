@@ -451,6 +451,14 @@
       "oAP" : "\/page-event-list.html",
       "oF" : 0
     },
+    "\/assets\/kit-files\/page-event.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-event.html",
+      "oF" : 0
+    },
     "\/assets\/kit-files\/page-sidebar-ela-briefing.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -667,6 +675,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/sass\/components\/_map.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/css\/_map.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/sass\/components\/_members.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -760,6 +782,20 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/sass\/css\/_teaser.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/sass\/components\/_video.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/sass\/css\/_video.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1205,6 +1241,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-big-green-button.html",
+      "oF" : 0
+    },
+    "\/page-committee-member.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-committee-member.html",
       "oF" : 0
     },
     "\/page-event-list.html" : {

@@ -1,5 +1,5 @@
 /*	========================================================================== */
-/*		EVENTS
+/*		EVENTS LIST
 /*	========================================================================== */
 
 .eventList {
@@ -130,4 +130,57 @@
 
 .eventListItem.m_previous .eventListItem-meta dd {
 	color: $col_grey_500;
+}
+
+/*	========================================================================== */
+/*		EVENT PAGE
+/*	========================================================================== */
+
+.event-section {
+	padding-bottom: 1em;
+	border-bottom: 2px solid $col_grey_200;
+	margin: 1em 0;
+  @media only screen and (min-width: $break_tablet) {
+		padding-bottom: 2em;
+		margin-bottom: 2em;
+	}
+}
+
+.event-section:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+.event-section > *:first-child {
+	margin-top: 0;
+}
+
+.event-section > *:last-child {
+	margin-bottom: 0;
+}
+
+.event-section dl {
+	display: inline-grid;
+	grid-template-columns: auto 1fr;
+	column-gap: 1em;
+	row-gap: 2px;
+	padding: 0;
+	margin: 0 0 1em;
+}
+
+.event-section dt {
+	@include font-size-13();
+	@include font_bold();
+	text-transform: uppercase;
+	color: $col_blue;
+	grid-column: 1 / 2;
+	padding: 0.825em 0 0;
+	margin: 0;
+}
+
+.event-section dd {
+	grid-column: 2 / 3;
+	background-color: $col_grey_100;
+	padding: 0.5em 1em 0.3em;
+	margin: 0;
 }
