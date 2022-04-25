@@ -2968,7 +2968,7 @@ div.person {
 }
 
 /*	========================================================================== */
-/*		SEARCH RESULTS
+/*		SEARCH RESULTS UTILITIES
 /*	========================================================================== */
 .search-result-utilities {
   display: -webkit-flex;
@@ -2998,6 +2998,101 @@ div.person {
 
 .search-result-filter select {
   margin: 0;
+}
+
+/*	========================================================================== */
+/*		SEARCH RESULTS LIST
+/*	========================================================================== */
+.searchResults-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3em;
+}
+
+.searchResults-item {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #E2E8F0;
+  margin-bottom: 1em;
+}
+@media only screen and (min-width: 750px) {
+  .searchResults-item {
+    display: grid;
+    grid-template-columns: minmax(6em, -webkit-min-content) 1fr;
+    grid-template-columns: minmax(6em, min-content) 1fr;
+    gap: 1em;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
+  }
+}
+
+.searchResults-type {
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  font-size: 0.75em;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #64748B;
+  display: inline-block;
+  background-color: #F1F5F9;
+  padding: 0.5em 0.75em 0.2em;
+  border: 1px solid #CBD5E1;
+  margin: 0 0 1.5em;
+}
+
+.searchResults-title {
+  font-size: 22px;
+  font-size: 1.375em;
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  margin: 0 0 0.5em;
+}
+
+.searchResults-title a {
+  text-decoration: none;
+  color: #333333;
+}
+.searchResults-title a:hover, .searchResults-title a:focus, .searchResults-title a:active {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  color: #133FAD;
+}
+
+.searchResults-meta {
+  line-height: 1.2;
+  display: -webkit-flex;
+  display: flex;
+  gap: 1.5em;
+  padding: 0;
+  margin: 0 0 0.75em;
+}
+
+.searchResults-meta dt,
+.searchResults-meta dd {
+  padding: 0;
+  margin: 0;
+}
+
+.searchResults-meta dt {
+  font-size: 12px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #94A3B8;
+  padding-bottom: 0.333em;
+}
+
+.searchResults-meta dd {
+  font-size: 14px;
+  font-size: 0.875em;
+  font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 700;
+  color: #475569;
 }
 
 /*	========================================================================== */
