@@ -1027,8 +1027,8 @@ a.big-green-button:visited,
           align-items: center;
   gap: 0.75rem;
   background-color: #133FAD;
-  padding: 1rem 0.5rem 0.5rem 1.5rem;
-  border-radius: 1.5em;
+  padding: 0.75rem 0.75rem 0.5rem 1.5rem;
+  border-radius: 0.5em;
   margin: 1em 0;
 }
 a.big-green-button:focus,
@@ -1055,8 +1055,8 @@ a.big-green-button::after,
 .copy a.big-green-button::after {
   content: "";
   display: block;
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   -webkit-flex-shrink: 0;
           flex-shrink: 0;
   -webkit-flex-grow: 0;
