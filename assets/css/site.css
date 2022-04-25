@@ -2869,11 +2869,11 @@ div.person {
   line-height: 1.2;
   text-decoration: none;
   text-transform: uppercase;
-  color: #133FAD;
+  color: #64748B;
   display: inline-block;
-  background-color: #DBEAFE;
+  background-color: #F1F5F9;
   padding: 0.5em 0.75em 0.2em;
-  border-radius: 6px;
+  border: 1px solid #CBD5E1;
   margin: 0 0 1.5em;
 }
 

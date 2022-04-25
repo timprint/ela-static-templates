@@ -42,11 +42,11 @@ div.person {
 	line-height: 1.2;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: $col_blue_d_1;
+	color: $col_grey_500;
 	display: inline-block;
-	background-color: $col_lightblue_200;
+	background-color: $col_grey_100;
 	padding: 0.5em 0.75em 0.2em;
-	border-radius: 6px;
+	border: 1px solid $col_grey_300;
 	margin: 0 0 1.5em;
 }
 

@@ -459,6 +459,14 @@
       "oAP" : "\/page-event.html",
       "oF" : 0
     },
+    "\/assets\/kit-files\/page-search-results.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-search-results.html",
+      "oF" : 0
+    },
     "\/assets\/kit-files\/page-sidebar-ela-briefing.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -1265,6 +1273,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-event.html",
+      "oF" : 0
+    },
+    "\/page-search-results.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-search-results.html",
       "oF" : 0
     },
     "\/page-sidebar-ela-briefing.html" : {
