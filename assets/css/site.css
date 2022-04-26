@@ -1225,7 +1225,7 @@ a.big-green-button::after,
   -webkit-align-items: center;
           align-items: center;
   background-color: #133FAD;
-  padding: 0.35em 0.75em;
+  padding: 0.35em 0.75em 0.25em;
   outline: none;
   border: none;
   border: 1px solid #002070;
@@ -1612,6 +1612,22 @@ a.big-green-button::after,
 /*	========================================================================== */
 /*    	FILTER FACETS
 /*	========================================================================== */
+.facet-clear {
+  margin: 0 0 0.5em;
+}
+
+.facet-clear .button {
+  line-height: 1;
+  width: 100%;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.facet-clear .button svg {
+  width: 1em;
+  height: 1em;
+}
+
 .facet-block {
   background-color: #F1F5F9;
   padding: 1.25em 1em 0.5em;

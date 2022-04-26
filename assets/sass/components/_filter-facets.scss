@@ -2,6 +2,21 @@
 /*    	FILTER FACETS
 /*	========================================================================== */
 
+.facet-clear {
+	margin: 0 0 0.5em;
+}
+
+.facet-clear .button {
+	line-height: 1;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.facet-clear .button  svg {
+	width: 1em;
+	height: 1em;
+}
+
 .facet-block {
 	background-color: $col_grey_100;
 	padding: 1.25em 1em 0.5em;
