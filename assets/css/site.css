@@ -3103,9 +3103,9 @@ div.person {
 @media only screen and (min-width: 750px) {
   .searchResults-item {
     display: grid;
-    grid-template-columns: minmax(6em, -webkit-min-content) 1fr;
-    grid-template-columns: minmax(6em, min-content) 1fr;
-    gap: 1em;
+    grid-template-columns: minmax(8em, -webkit-min-content) 1fr;
+    grid-template-columns: minmax(8em, min-content) 1fr;
+    gap: 0;
     -webkit-align-items: flex-start;
             align-items: flex-start;
   }
@@ -3114,18 +3114,45 @@ div.person {
 .searchResults-type {
   font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
   font-weight: 700;
-  font-size: 12px;
-  font-size: 0.75em;
+  font-size: 13px;
+  font-size: 0.8125em;
   line-height: 1.2;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
-  color: #64748B;
+  color: #133FAD;
   display: inline-block;
-  background-color: #F1F5F9;
-  padding: 0.5em 0.75em 0.2em;
-  border: 1px solid #CBD5E1;
+  border-bottom: 3px solid #133FAD;
+  padding: 0 0 0.2rem;
   margin: 0 0 1.5em;
+}
+@media only screen and (min-width: 750px) {
+  .searchResults-type {
+    position: relative;
+    padding: 0.5rem 1rem 0 0;
+    border-top: 2px solid #133FAD;
+    border-bottom: none;
+    margin-top: 0.55rem;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .searchResults-type::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: -3px;
+    top: -5px;
+    border-radius: 50%;
+    background-color: #133FAD;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .searchResults-item > div {
+    padding-left: 1rem;
+  }
 }
 
 .searchResults-title {
