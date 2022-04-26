@@ -98,12 +98,14 @@
 .eventListItem-meta {
 	line-height: 1.2;
 	grid-column: 2 / 3;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	column-gap: 1em;
-	row-gap: 0.5em;
 	padding: 0;
 	margin: 0;
+  @media only screen and (min-width: $break_tablet) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1em;
+		row-gap: 0.5em;
+	}
 }
 
 .eventListItem-meta dt,
@@ -158,9 +160,6 @@
 .event-section > *:last-child {
 	margin-bottom: 0;
 }
-
-
-
 
 .eventHeader {
 	color: #fff;
@@ -231,12 +230,14 @@
 .eventHeader-meta {
 	line-height: 1.2;
 	grid-column: 2 / 3;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	column-gap: 1em;
-	row-gap: 0.5em;
 	padding: 0;
 	margin: 0;
+  @media only screen and (min-width: $break_tablet) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1em;
+		row-gap: 0.5em;
+	}
 }
 
 .eventHeader-meta dt,
