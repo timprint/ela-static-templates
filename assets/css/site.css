@@ -2973,13 +2973,33 @@ div.person {
 .search-result-utilities {
   display: -webkit-flex;
   display: flex;
-  -webkit-align-items: flex-end;
-          align-items: flex-end;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 1em;
   padding-bottom: 1em;
   border-bottom: 1px solid #E3E9F1;
   margin-bottom: 2em;
+}
+@media only screen and (min-width: 750px) {
+  .search-result-utilities {
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+  }
+}
+
+.search-result-count {
+  padding: 0.75em 0 0.5em;
+}
+@media only screen and (min-width: 750px) {
+  .search-result-count {
+    white-space: nowrap;
+  }
 }
 
 .search-result-count p {
@@ -2998,6 +3018,72 @@ div.person {
 
 .search-result-filter select {
   margin: 0;
+}
+
+.search-result-form {
+  width: 100%;
+}
+@media only screen and (min-width: 750px) {
+  .search-result-form {
+    width: auto;
+  }
+}
+
+.search-result-form form {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+          align-items: center;
+  gap: 8px;
+  background-color: #E3E9F1;
+  border-radius: 6px;
+  box-shadow: 0 0 0 4px #E3E9F1;
+}
+@media only screen and (min-width: 750px) {
+  .search-result-form form {
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    gap: 4px;
+  }
+}
+
+.search-result-form form > * {
+  margin: 0;
+}
+
+.search-result-form form input:first-child {
+  display: block;
+  width: 100%;
+}
+@media only screen and (min-width: 750px) {
+  .search-result-form form input:first-child {
+    width: auto;
+    border-radius: 6px 0 0 6px;
+  }
+}
+
+.search-result-form form select {
+  display: block;
+  width: 100%;
+}
+@media only screen and (min-width: 750px) {
+  .search-result-form form select {
+    width: auto;
+    border-radius: 0;
+  }
+}
+
+.search-result-form form input:last-child {
+  display: block;
+  width: 100%;
+}
+@media only screen and (min-width: 750px) {
+  .search-result-form form input:last-child {
+    width: auto;
+    border-radius: 0 6px 6px 0;
+  }
 }
 
 /*	========================================================================== */
