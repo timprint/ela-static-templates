@@ -491,6 +491,14 @@
       "oAP" : "\/page-sidebar-member-list.html",
       "oF" : 0
     },
+    "\/assets\/kit-files\/page-sidebar-person-list.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-sidebar-person-list.html",
+      "oF" : 0
+    },
     "\/assets\/kit-files\/page-sidebar.kit" : {
       "cB" : 1,
       "ft" : 2048,
