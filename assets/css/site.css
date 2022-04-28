@@ -417,6 +417,34 @@ a {
 /*	========================================================================== */
 /*    	FORMS
 /*	========================================================================== */
+form {
+  background-color: #F1F5F9;
+  padding: 2em 1em;
+  padding: 2em clamp(1em,3vw,3em);
+  border-radius: 6px;
+  border: 1px solid #E2E8F0;
+  margin: 1em 0 2em;
+}
+
+.form_small,
+.form_medium,
+.form_large {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form_small {
+  max-width: 28em;
+}
+
+.form_medium {
+  max-width: 36em;
+}
+
+.form_large {
+  max-width: 44em;
+}
+
 label {
   font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
   font-weight: 500;
@@ -426,6 +454,11 @@ label {
   line-height: 1.5;
   display: block;
   margin: 1.5em 0 0.125em 3px;
+}
+
+.form_note {
+  color: #94A3B8;
+  margin-top: -1em;
 }
 
 input[type=text],
@@ -527,7 +560,7 @@ select {
   width: auto;
   max-width: 100%;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 0 1.5em;
   border: 1px solid #94A3B8;
   box-shadow: inset 1px 1px 2px 0 #E2E8F0;
   border-radius: 6px;
@@ -577,12 +610,113 @@ select[aria-disabled=true] {
   border-color: #aaa;
 }
 
-label.withCheckbox input[type=checkbox] {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.25em;
+/*	========================================================================== */
+/*    	!FORM : CHECKBOXES & RADIOS
+/*	========================================================================== */
+.formRadios,
+.formCheckboxes {
+  margin: 0 0 2em;
 }
 
+.formCheckboxesTitle,
+.formRadiosTitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-size: 1em;
+  line-height: 1.5;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+label.withCheckbox,
+label.withRadio {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-size: 1em;
+  text-transform: none;
+  line-height: 1;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  gap: 0.5em;
+  margin: 0.75em 0;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+@supports (-webkit-appearance: none) {
+  input[type=checkbox],
+input[type=radio] {
+    -webkit-appearance: none;
+    background-color: #fff;
+    position: relative;
+    border: 2px solid #94A3B8;
+    outline: none;
+  }
+
+  input[type=checkbox] {
+    border-radius: 5px;
+  }
+
+  input[type=radio] {
+    border-radius: 50%;
+  }
+
+  input[type=checkbox]:focus,
+input[type=radio]:focus,
+label.withCheckbox:hover input[type=checkbox],
+label.withRadio:hover input[type=radio] {
+    outline: none;
+    border-color: #133FAD;
+    box-shadow: 0 0 0 4px #BFDBFE;
+  }
+
+  input[type=checkbox]:checked,
+input[type=radio]:checked {
+    background-color: #fff;
+    border: 2px solid #1544BD;
+  }
+
+  input[type=checkbox]:checked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    width: calc(1.6em - 10px);
+    height: calc(0.9em - 7px);
+    border: 4px solid #1544BD;
+    border-right: none;
+    border-top: none;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  input[type=radio]:checked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    background-color: #1544BD;
+    border-radius: 50%;
+  }
+}
 /*	========================================================================== */
 /*    	!FORM : SEARCHBAR
 /*	========================================================================== */
@@ -1212,7 +1346,8 @@ a.big-green-button::after,
 /*	========================================================================== */
 /*		BUTTON
 /*	========================================================================== */
-.button {
+.button,
+button {
   font-size: 16px;
   font-size: 1em;
   font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
@@ -1235,32 +1370,41 @@ a.big-green-button::after,
 
 .button:focus,
 .button:hover,
-.button:active {
+.button:active,
+button:focus,
+button:hover,
+button:active {
   background-color: #1E53D9;
   box-shadow: 0 0 0 4px #BFDBFE;
 }
 
-.button.m_large {
-  font-size: 20px;
-  font-size: 1.25em;
+.button.m_large,
+button.m_large {
+  font-size: 18px;
+  font-size: 1.125em;
+  padding: 0.666em 1em 0.45em;
 }
 
-.button.m_small {
+.button.m_small,
+button.m_small {
   font-size: 14px;
   font-size: 0.875em;
 }
 
-.button.m_xsmall {
+.button.m_xsmall,
+button.m_xsmall {
   font-size: 12px;
   font-size: 0.75em;
 }
 
-.button span {
+.button span,
+button span {
   display: block;
   padding: 0.75em 0.3em 0.6em;
 }
 
-.button svg {
+.button svg,
+button svg {
   width: 1.2em;
   height: 1.2em;
   fill: currentColor;

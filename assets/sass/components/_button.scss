@@ -2,7 +2,8 @@
 /*		BUTTON
 /*	========================================================================== */
 
-.button {
+.button,
+button {
 	@include font-size-16;
 	@include font_bold;
 	line-height: 1.2;
@@ -21,29 +22,38 @@
 
 .button:focus,
 .button:hover,
-.button:active {
+.button:active,
+button:focus,
+button:hover,
+button:active {
 	background-color: $col_blue_l_1;
 	box-shadow: 0 0 0 4px $col_lightblue_300;
 }
 
-.button.m_large {
-	@include font-size-20;
+.button.m_large,
+button.m_large {
+	@include font-size-18;
+  padding: 0.666em 1em 0.45em;
 }
 
-.button.m_small {
+.button.m_small,
+button.m_small {
 	@include font-size-14;
 }
 
-.button.m_xsmall {
+.button.m_xsmall,
+button.m_xsmall {
 	@include font-size-12;
 }
 
-.button span {
+.button span,
+button span {
 	display: block;
 	padding: 0.75em 0.3em 0.6em;
 }
 
-.button svg {
+.button svg,
+button svg {
 	width: 1.2em;
 	height: 1.2em;
 	fill: currentColor

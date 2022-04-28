@@ -83,6 +83,14 @@
       "oAP" : "\/component-library.html",
       "oF" : 0
     },
+    "\/assets\/kit-files\/form.kit" : {
+      "cB" : 1,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/form.html",
+      "oF" : 0
+    },
     "\/assets\/kit-files\/image-tests\/home-page-a.kit" : {
       "cB" : 1,
       "ft" : 2048,
@@ -1313,6 +1321,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-sidebar-member-list.html",
+      "oF" : 0
+    },
+    "\/page-sidebar-person-list.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-sidebar-person-list.html",
       "oF" : 0
     },
     "\/page-sidebar.html" : {
