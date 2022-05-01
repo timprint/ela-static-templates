@@ -1,0 +1,105 @@
+/*	========================================================================== */
+/*		JOBS LIST
+/*	========================================================================== */
+
+.jobsList {
+	list-style: none;
+	padding: 0;
+	margin: 1em 0 3em;
+}
+
+.jobsList-item {
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid $col_grey_200;
+	margin-bottom: 1.5em;
+}
+
+.jobsList-title {
+	@include font-size-22();
+	@include font_bold();
+	margin: 0 0 0.5em;
+}
+
+.jobsList-title a {
+	text-decoration: none;
+	color: $col_text_base;
+	&:hover,
+	&:focus,
+	&:active {
+  	@include text-decoration-default();
+		color: $col_blue_d_1;
+    }
+}
+
+.jobsList-meta {
+	line-height: 1.2;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: baseline;
+	column-gap: 0.75em;
+	row-gap: 0.5em;
+	padding: 0;
+	margin: 0 0 0.75em;
+}
+
+.jobsList-meta dt,
+.jobsList-meta dd {
+	padding: 0;
+	margin: 0;
+}
+
+.jobsList-meta dt {
+	@include font-size-12();
+	text-transform: uppercase;
+	color: $col_grey_500;
+	grid-column: 1 / 2;
+}
+
+.jobsList-meta dd {
+	@include font-size-14();
+	@include font_bold();
+	color: $col_grey_700;
+	grid-column: 2 / 3;
+}
+
+/*	========================================================================== */
+/*		JOB ITEM
+/*	========================================================================== */
+
+.job {
+	padding: 1.5em 0 3em;
+}
+
+.job-meta {
+	line-height: 1.285714286;
+	display: inline-grid;
+	grid-template-columns: auto 1fr;
+	align-items: baseline;
+	column-gap: 0;
+	padding: 0;
+	border-top: 1px solid $col_grey_200;
+	margin: 0;
+}
+
+.job-meta dt,
+.job-meta dd {
+	border-bottom: 1px solid $col_grey_200;
+	margin: 0;
+}
+
+.job-meta dt {
+	@include font-size-12();
+	line-height: 1.5;
+	text-transform: uppercase;
+	color: $col_grey_500;
+	grid-column: 1 / 2;
+	padding: 0.75rem 1rem 0.5rem 0;
+}
+
+.job-meta dd {
+	@include font-size-14();
+	@include font_bold();
+	color: $col_grey_700;
+	grid-column: 2 / 3;
+	padding: 0.75rem 0 0.5rem;
+}

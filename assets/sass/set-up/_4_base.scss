@@ -52,5 +52,11 @@ img {
   }
 	
 a {
+	color: $col_blue_d_1;
 	transition: all 0.3s ease;
+	&:hover,
+	&:focus,
+	&:active {
+    color: $col_green_d_2;
+    }
 }

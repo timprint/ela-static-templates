@@ -187,11 +187,11 @@
 .searchResults-meta dt {
 	@include font-size-12();
 	text-transform: uppercase;
-	color: $col_grey_400;padding-bottom: 0.333em;
+	color: $col_grey_500;padding-bottom: 0.333em;
 }
 
 .searchResults-meta dd {
 	@include font-size-14();
 	@include font_bold();
-	color: $col_grey_600;
+	color: $col_grey_700;
 }
