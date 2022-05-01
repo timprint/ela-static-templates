@@ -11,6 +11,16 @@ form {
 	margin: 1em 0 2em;
 }
 
+.headerSearch form,
+.search-result-utilities form,
+.search-result-form form {
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+	border: none;
+	margin: 0;
+}
+
 .form_small,
 .form_medium,
 .form_large {
@@ -179,25 +189,25 @@ label.withRadio {
 	margin: 0.75em 0;
 }
 
-[type=checkbox],
-[type=radio] {
+label.withCheckbox [type=checkbox],
+label.withRadio [type=radio] {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+label.withCheckbox input[type="checkbox"],
+label.withRadioinput[type="checkbox"] input[type="radio"] {
   display: block;
   width: 28px;
   height: 28px;
 }
 
-// cjeckbox styling based on https://codepen.io/jensimmons/pen/KKPzxJa
+// checkbox styling based on https://codepen.io/jensimmons/pen/KKPzxJa
 @supports(-webkit-appearance: none) {
  	
- 	input[type="checkbox"],
-  input[type="radio"] {
+ 	label.withCheckbox input[type="checkbox"],
+  label.withRadio input[type="radio"] {
 		-webkit-appearance: none;
 		background-color: #fff;
 		position: relative;
@@ -205,30 +215,30 @@ input[type="radio"] {
 		outline: none;
  	}
        
-  input[type="checkbox"] {
+  label.withCheckbox input[type="checkbox"] {
     border-radius: 5px;
   }
  	
-  input[type="radio"] {
+  label.withRadio input[type="radio"] {
 		border-radius: 50%;
 	}
 	
-	input[type="checkbox"]:focus,
-	input[type="radio"]:focus,
+	label.withCheckbox input[type="checkbox"]:focus,
+	label.withRadio input[type="radio"]:focus,
 	label.withCheckbox:hover input[type="checkbox"],
-	label.withRadio:hover input[type="radio"] {
+	label.withRadio label.withRadio:hover input[type="radio"] {
 		outline: none;
     border-color: $col_blue_d_1;
     box-shadow: 0 0 0 4px $col_lightblue_300;
 	}
  	
- 	input[type="checkbox"]:checked,
- 	input[type="radio"]:checked {
+ 	label.withCheckbox input[type="checkbox"]:checked,
+ 	label.withRadio input[type="radio"]:checked {
 		background-color: #fff;
 		border: 2px solid $col_blue;
 	}
 	
-	input[type="checkbox"]:checked::after {
+	label.withCheckbox input[type="checkbox"]:checked::after {
 		content: "";
 		display: block;
 		position: absolute;
@@ -242,7 +252,7 @@ input[type="radio"] {
 		transform: rotate(-45deg);
 	}
 	
-	input[type="radio"]:checked::after {
+	label.withRadio input[type="radio"]:checked::after {
 		content: "";
 		display: block;
 		position: absolute;
@@ -275,6 +285,15 @@ input[type="radio"] {
 	}
   @media only screen and (min-width: $break_desktop) {
 		flex-grow: 1;
+	}
+}
+
+.headerSearch .searchBar {
+  @media only screen and (min-width: $break_tablet) {
+  	box-shadow: none;
+	}
+  @media only screen and (min-width: $break_laptop) {
+  	box-shadow: 0 0 0 1px $col_grey_200;
 	}
 }
 
