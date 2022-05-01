@@ -71,10 +71,9 @@
 }
 
 .job-meta {
-	line-height: 1.285714286;
 	display: inline-grid;
 	grid-template-columns: auto 1fr;
-	align-items: baseline;
+	align-items: bottom;
 	column-gap: 0;
 	padding: 0;
 	border-top: 1px solid $col_grey_200;
@@ -88,8 +87,8 @@
 }
 
 .job-meta dt {
-	@include font-size-12();
-	line-height: 1.5;
+	@include font-size-13();
+	line-height: 20px;
 	text-transform: uppercase;
 	color: $col_grey_500;
 	grid-column: 1 / 2;
@@ -97,8 +96,9 @@
 }
 
 .job-meta dd {
-	@include font-size-14();
+	@include font-size-15();
 	@include font_bold();
+	line-height: 20px;
 	color: $col_grey_700;
 	grid-column: 2 / 3;
 	padding: 0.75rem 0 0.5rem;

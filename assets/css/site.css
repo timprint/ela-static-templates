@@ -2984,11 +2984,10 @@ button svg {
 }
 
 .job-meta {
-  line-height: 1.285714286;
   display: inline-grid;
   grid-template-columns: auto 1fr;
-  -webkit-align-items: baseline;
-          align-items: baseline;
+  -webkit-align-items: bottom;
+          align-items: bottom;
   -webkit-column-gap: 0;
      -moz-column-gap: 0;
           column-gap: 0;
@@ -3004,9 +3003,9 @@ button svg {
 }
 
 .job-meta dt {
-  font-size: 12px;
-  font-size: 0.75em;
-  line-height: 1.5;
+  font-size: 13px;
+  font-size: 0.8125em;
+  line-height: 20px;
   text-transform: uppercase;
   color: #64748B;
   grid-column: 1/2;
@@ -3014,10 +3013,11 @@ button svg {
 }
 
 .job-meta dd {
-  font-size: 14px;
-  font-size: 0.875em;
+  font-size: 15px;
+  font-size: 0.9375em;
   font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
   font-weight: 700;
+  line-height: 20px;
   color: #334155;
   grid-column: 2/3;
   padding: 0.75rem 0 0.5rem;
