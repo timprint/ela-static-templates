@@ -144,6 +144,41 @@
 /*		HERO : IMAGES
 /*	========================================================================== */
 
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 0;
+  }
+  85.7% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  19% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 0;
+  }
+  85.7% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 [class^="hero-image"] {
 	grid-column: 1 / 4;
 	grid-row: 1 / 2;
@@ -151,6 +186,16 @@
 	background-size: cover;
 	background-position: center center;
 	filter: url("#duotone");
+}
+
+[class^="hero-image"]:nth-child(3) {
+	-webkit-animation: fade-out 18s ease-out 0s infinite both;
+	        animation: fade-out 18s ease-out 0s infinite both;
+}
+
+[class^="hero-image"]:nth-child(2) {
+	-webkit-animation: fade-out 18s ease-out 6s infinite both;
+	        animation: fade-out 18s ease-out 6s infinite both;
 }
 
 .hero-image-a {
