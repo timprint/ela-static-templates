@@ -1329,6 +1329,14 @@
       "oAP" : "\/page-event.html",
       "oF" : 0
     },
+    "\/page-job.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-job.html",
+      "oF" : 0
+    },
     "\/page-jobs-list.html" : {
       "cB" : 0,
       "ft" : 8192,

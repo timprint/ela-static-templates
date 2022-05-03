@@ -1,1 +1,319 @@
+@charset "UTF-8";
 
+html {
+	font-size: 10pt;
+}
+
+body {
+	width: 100%;
+	padding: 2em;
+	margin: 0 auto;
+}
+ 
+/* make all text black */
+* {
+	color: #000 !important;
+	background-color: #fff !important;
+ }
+ 
+svg {
+	fill: #000 !important;
+ }
+
+a {
+	text-decoration: none !important;
+}
+
+a::after,
+a.big-green-button::after,
+.copy a.big-green-button::after {
+	text-transform: lowercase;
+  content: "→ " attr(href) "";
+	font-weight: 400;
+	font-size: 9pt;
+	line-height: 1.2;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	margin: 0.25em;
+}
+
+a.big-green-button,
+.copy a.big-green-button {
+	font-size: 16pt;
+	display: block;
+	padding: 0;
+}
+
+/* Hide elements that don't make sense in print */
+.skipLink,
+.headerNavContainer,
+.headerNavToggle,
+[class^=hero-image],
+.video iframe,
+.pagination,
+.breadcrumbs,
+.hero-home-primary-link svg,
+.hero-home-secondary a svg,
+.secondary-nav,
+.facet-block,
+.facet-clear,
+.search-result-utilities,
+.layout-sidebar-search-item,
+.footerLinks {
+	display: none !important;
+ }
+ 
+/* make elements display as block
+   mainly to overwrite unneeded grid and flex styles */
+.pageHeaderGrid,
+.hero,
+.hero-layout-sidebar,
+.hero-layout-single-column,
+.layout-3-col,
+.layout-sidebar {
+	display: block !important;
+ }
+ 
+.u_max-width {
+	width: auto;
+	max-width: none; 
+ }
+ 
+.headerLogo {
+  z-index: auto;
+  padding: 0;
+	margin-bottom: 2em;
+}
+
+.headerLogo a::after {
+	content: "";
+}
+
+.headerLogo img {
+	width: 4.5cm;
+	height: 1.102cm;
+}
+
+.hero-home {
+	padding: 0;	
+}
+
+.hero-home-primary-text {
+	margin-bottom: 2em;
+}
+
+.hero-home-primary-link,
+.hero-home-secondary a {
+	margin: 1em 0;
+}
+
+.hero-home-primary-link a,
+.hero-home-secondary a {
+	font-weight: 600;
+	font-size: 14pt;
+	text-transform: none;
+}
+
+.hero-home-secondary {
+	padding: 0;
+}
+
+.hero-layout-single-column {
+  max-width: none;
+}
+
+.hero-home-primary h1,
+.hero .hero-title h1,
+.hero-short .hero-title h1 {
+	font-size: 32pt;
+  margin: 0 0 0.5em;
+}
+
+.layout-sidebar {
+	padding: 0;
+}
+
+.layout-section {
+	padding: 0;
+	margin: 3em 0;
+}
+
+.section-header {
+	font-size: 10pt;
+	margin: 0 0 2em;
+}
+
+.section-header span {
+	padding-bottom: 0.33em;
+	border-bottom-width: 1px;
+	border-bottom-color: #000;
+}
+
+.teaser,
+.list-item {
+	padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 1em;
+}
+
+.teaser h3 {
+	font-size: 14pt;
+	margin-bottom: 0.5em;
+}
+
+.teaser-text {
+	font-size: 11pt;
+}
+
+.teaser-link {
+  margin: 0 0 0.5em;
+}
+
+.teaser-link a {
+  font-weight: 600;
+  font-size: 11pt;
+  line-height: 1;
+  text-transform: none;
+  text-decoration: underline;
+  white-space: nowrap;
+  display: block;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.teaser-link a span {
+  display: inline;
+}
+
+.teaser-link a svg {
+  display: none;
+}
+
+.search-result-utilities {
+  display: block;
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 1em;
+}
+
+.eventListItem a,
+.eventHeader {
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+	margin: 0 0 2em;
+}
+
+.eventListItem time,
+.eventHeader time {
+  display: block;
+  padding-right: 0;
+  border-right: none;
+  margin: 0;
+}
+
+.eventHeader time {
+  margin-bottom: 1em;
+}
+
+.eventListItem-month,
+.eventListItem-day,
+.eventListItem-year,
+.eventHeader-month,
+.eventHeader-day,
+.eventHeader-year  {
+  font-size: 14pt;
+  line-height: 1.2;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline;
+}
+
+.eventListItem-meta,
+.eventHeader-meta {
+  line-height: 1.2;
+  grid-column: 2/3;
+  padding: 0;
+  margin: 0.5em 0 0;
+}
+
+.eventListItem-meta dt,
+.eventListItem-meta dd,
+.eventHeader-meta dt,
+.eventHeader-meta dd  {
+	display: block;
+}
+
+.eventListItem-meta dt,
+.eventHeader-meta dt {
+  font-size: 9pt;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.eventListItem-meta dd,
+.eventHeader-meta dd {
+  font-size: 11pt;
+  margin: 0 0 0.5em 0;
+}
+
+.event-section {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin: 1em 0 2em;
+}
+
+.copy .lede p {
+  font-size: 15pt;
+}
+
+.searchResults-item {
+	padding: 0;
+  border-bottom: none;
+	margin: 0 0 3em;
+}
+
+.searchResults-type {
+  font-weight: 500;
+  font-size: 9pt;
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  padding: 0 0 0.2rem;
+  margin: 0 0 1em;
+}
+
+.tags {
+  font-size: 9pt;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.tags li {
+	display: block;
+}
+
+.tags li a {
+  font-weight: 500;
+  display: block;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.pageFooter {
+	padding: 1em 0 0;
+}
+
+.footerGrid {
+  display: block;
+  max-width: none;
+  padding: 0;
+}
+
+.footerSocial {
+	margin-bottom: 1em;
+}
