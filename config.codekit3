@@ -9,6 +9,45 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
+    "\/android-chrome-192x192.png" : {
+      "ft" : 32768,
+      "iS" : 3604,
+      "oA" : 0,
+      "oAP" : "\/android-chrome-192x192.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/android-chrome-256x256.png" : {
+      "ft" : 32768,
+      "iS" : 4673,
+      "oA" : 0,
+      "oAP" : "\/android-chrome-256x256.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/apple-touch-icon.png" : {
+      "ft" : 32768,
+      "iS" : 3050,
+      "oA" : 0,
+      "oAP" : "\/apple-touch-icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/css\/print.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1009,12 +1048,54 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/browserconfig.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/browserconfig.xml",
+      "oF" : 0
+    },
     "\/component-library.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/component-library.html",
+      "oF" : 0
+    },
+    "\/favicon-16x16.png" : {
+      "ft" : 32768,
+      "iS" : 857,
+      "oA" : 0,
+      "oAP" : "\/favicon-16x16.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/favicon-32x32.png" : {
+      "ft" : 32768,
+      "iS" : 1401,
+      "oA" : 0,
+      "oAP" : "\/favicon-32x32.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/favicon.ico",
       "oF" : 0
     },
     "\/form.html" : {
@@ -1297,6 +1378,19 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
+    "\/mstile-150x150.png" : {
+      "ft" : 32768,
+      "iS" : 3250,
+      "oA" : 0,
+      "oAP" : "\/mstile-150x150.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/page-big-green-button.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1428,12 +1522,30 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/safari-pinned-tab.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/safari-pinned-tab.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/search.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/search.html",
+      "oF" : 0
+    },
+    "\/site.webmanifest" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site.webmanifest",
       "oF" : 0
     }
   },
@@ -1447,7 +1559,7 @@
     "creationDate" : 666570609.501405,
     "displayValue" : "ela-static-templates",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-tar",
+    "iconImageName" : "\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
