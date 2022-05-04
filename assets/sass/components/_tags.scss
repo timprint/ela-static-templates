@@ -18,7 +18,8 @@
 	align-items: center;
 }
 
-.tags li a {
+.tags li a,
+.tags li a:visited {
 	@include font_medium();
 	text-decoration: none;
 	color: $col_blue_d_1;

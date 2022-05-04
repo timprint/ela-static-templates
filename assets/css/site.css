@@ -1403,6 +1403,7 @@ button {
 button:focus,
 button:hover,
 button:active {
+  color: #fff;
   background-color: #1E53D9;
   box-shadow: 0 0 0 4px #BFDBFE;
 }
@@ -1648,7 +1649,7 @@ button svg {
 }
 
 .eventListItem.m_previous time {
-  color: #94A3B8;
+  color: #333333;
   border-right-color: #CBD5E1;
 }
 
@@ -1715,7 +1716,7 @@ button svg {
 }
 
 .eventListItem.m_previous .eventListItem-meta dt {
-  color: #94A3B8;
+  color: #64748B;
 }
 
 .eventListItem-meta dd {
@@ -1725,7 +1726,7 @@ button svg {
 }
 
 .eventListItem.m_previous .eventListItem-meta dd {
-  color: #64748B;
+  color: #333333;
 }
 
 /*	========================================================================== */
@@ -1793,7 +1794,7 @@ button svg {
 }
 
 .eventHeader.m_previous time {
-  color: #94A3B8;
+  color: #333333;
   border-right-color: #CBD5E1;
 }
 
@@ -1824,7 +1825,7 @@ button svg {
 }
 
 .eventHeader.m_previous .lede p {
-  color: #64748B;
+  color: #333333;
 }
 
 .eventHeader.m_previous .eventListItem-name {
@@ -1863,7 +1864,7 @@ button svg {
 }
 
 .eventHeader.m_previous .eventHeader-meta dt {
-  color: #94A3B8;
+  color: #64748B;
 }
 
 .eventHeader-meta dd {
@@ -1873,7 +1874,7 @@ button svg {
 }
 
 .eventHeader.m_previous .eventHeader-meta dd {
-  color: #64748B;
+  color: #333333;
 }
 
 /*	========================================================================== */
@@ -2187,8 +2188,8 @@ button svg {
     right: 0;
     top: 4em;
     z-index: 2;
-    -webkit-transform: translateY(-25em);
-            transform: translateY(-25em);
+    -webkit-transform: translateY(-27.5em);
+            transform: translateY(-27.5em);
     transition: -webkit-transform ease 0.2s;
     transition: transform ease 0.2s;
     transition: transform ease 0.2s, -webkit-transform ease 0.2s;
@@ -3360,7 +3361,7 @@ div.person {
   font-size: 14px;
   font-size: 0.875em;
   color: #64748B;
-  margin: -1rem 0 0.75rem;
+  margin: -0.75rem 0 0.75rem;
 }
 
 /*	========================================================================== */
@@ -3782,7 +3783,8 @@ div.person {
           align-items: center;
 }
 
-.tags li a {
+.tags li a,
+.tags li a:visited {
   font-family: "Hind", -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
   font-weight: 500;
   text-decoration: none;
@@ -3792,7 +3794,10 @@ div.person {
   padding: 0.5em 0.75em 0.2em;
   border-radius: 6px;
 }
-.tags li a:hover, .tags li a:focus, .tags li a:active {
+.tags li a:hover, .tags li a:focus, .tags li a:active,
+.tags li a:visited:hover,
+.tags li a:visited:focus,
+.tags li a:visited:active {
   color: #002070;
   background-color: #93C5FD;
 }
@@ -3861,6 +3866,7 @@ div.person {
   background-color: #133FAD;
   padding: 0.333rem 0.333rem 0.333rem 1rem;
   border-radius: 2rem;
+  margin-bottom: 0.25rem;
 }
 .teaser-link a:hover, .teaser-link a:focus, .teaser-link a:active {
   background-color: #B6C207;

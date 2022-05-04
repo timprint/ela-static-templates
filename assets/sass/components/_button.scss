@@ -26,6 +26,7 @@ button {
 button:focus,
 button:hover,
 button:active {
+	color: #fff;
 	background-color: $col_blue_l_1;
 	box-shadow: 0 0 0 4px $col_lightblue_300;
 }

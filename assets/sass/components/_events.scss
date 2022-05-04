@@ -65,7 +65,7 @@
 }
 
 .eventListItem.m_previous time {
-	color: $col_grey_400;
+	color: $col_text_base;
 	border-right-color: $col_grey_300;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .eventListItem.m_previous .eventListItem-meta dt {
-	color: $col_grey_400;
+	color: $col_grey_500;
 }
 
 .eventListItem-meta dd {
@@ -131,7 +131,7 @@
 }
 
 .eventListItem.m_previous .eventListItem-meta dd {
-	color: $col_grey_500;
+	color: $col_text_base;
 }
 
 /*	========================================================================== */
@@ -192,7 +192,7 @@
 }
 
 .eventHeader.m_previous time {
-	color: $col_grey_400;
+	color: $col_text_base;
 	border-right-color: $col_grey_300;
 }
 
@@ -220,7 +220,7 @@
 }
 
 .eventHeader.m_previous .lede p {
-	color: $col_grey_500;
+	color: $col_text_base;
 }
 
 .eventHeader.m_previous .eventListItem-name {
@@ -254,7 +254,7 @@
 }
 
 .eventHeader.m_previous .eventHeader-meta dt {
-	color: $col_grey_400;
+	color: $col_grey_500;
 }
 
 .eventHeader-meta dd {
@@ -263,5 +263,5 @@
 }
 
 .eventHeader.m_previous .eventHeader-meta dd {
-	color: $col_grey_500;
+	color: $col_text_base;
 }
