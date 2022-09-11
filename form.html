@@ -18,7 +18,7 @@
 			
 			<script>if(document.documentElement){document.documentElement.className='hasJS';}</script>
 	
-	    <link rel="stylesheet" href="/assets/css/site.css?ckcachebust=45218618B5C1F18321054298FFD70995" media="all">
+	    <link rel="stylesheet" href="/assets/css/site.css?ckcachebust=3CE18AC733F824B04809CA8DF3775F78" media="all">
 	    <link rel="stylesheet" href="/assets/css/print.css?ckcachebust=9C63C6BB80DE5A0917204698639812AA" media="print">
 	
 	</head>
@@ -155,7 +155,34 @@
 					
 						<label for="">Input password</label>
 						<input  id="" type="password" value="" placeholder="" />
+						
+						<script>						
+							function togglePassword(event) {
+								const passwordToggle = event.target;
+								const passwordField = event.target.parentElement.firstElementChild;
+								console.log(passwordToggle);
+								console.log(passwordField);
+  							if (passwordField.getAttribute("type") === "password") {
+    							passwordField.setAttribute("type", "text");
+									passwordToggle.classList.add("hide-password");
+									passwordToggle.classList.remove("show-password");
+  							} else {
+    							passwordField.setAttribute("type", "password");
+									passwordToggle.classList.remove("hide-password");
+									passwordToggle.classList.add("show-password");
+  							}
+								event.preventDefault();
+							}
+						</script> 
 					
+						<label for="">Input password</label>
+						<div class="formPasswordWIthToggle">
+							<input data-password="field"  id="" type="password" value="" />			
+    					<button onclick="togglePassword(event)" class="show-password">
+								<span class="u_visuallyhidden">toggle password visibility</span>
+							</button>
+						</div>
+											
 						<label for="">Input email</label>
 						<input  id="" type="email" value="" placeholder="" />
 					
